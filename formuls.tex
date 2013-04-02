@@ -1,0 +1,1138 @@
+\documentclass[12pt, a6paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel} 
+\textwidth 17.5cm
+\textheight 26cm
+\voffset -3.0cm
+\hoffset -1.8cm
+\usepackage{amsmath}
+\usepackage{longtable} 
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\arch}{arch}
+\DeclareMathOperator{\arsh}{arsh}
+\DeclareMathOperator{\arth}{arth}
+\DeclareMathOperator{\arcth}{arcth}
+\begin{document}
+\begin{titlepage}
+\vspace*{5cm}
+\begin{center}
+{\Huge СБОРНИК}
+\end{center}
+\begin{center}
+{\Huge МАТЕМАТИЧЕСКИХ}
+\end{center}
+\begin{center}
+{\Huge ФОРМУЛ}
+\end{center}
+\vfill 
+\begin{center} 
+{\rm \large Нижний Новгород, 2007-2009.} 
+\end {center} 
+\end{titlepage} 
+\tableofcontents
+\newpage
+\section{Греческий алфавит:}
+\begin{tabular}{llll}
+	$ \alpha    \text{ - альфа}$   & $ \beta  \text{ - бета}$    & $ \gamma    \text{ - гамма}$   & $ \delta \text{ - дельта}$  \\
+  $ \varepsilon  \text{ - эпсилон}$ & $ \zeta  \text{ - дзетта}$  & $ \eta      \text{ - этта}$    & $ \theta \text{ - тетта}$  \\
+  $ \iota     \text{ - йотта}$   & $ \kappa \text{ - каппа}$   & $ \lambda   \text{ - лямбда }$ & $ \mu    \text{ - мю}$     \\
+	$ \nu       \text{ - ню}$      & $ \xi    \text{ - кси}$     & $ o         \text{ - омикрон}$ & $ \pi    \text{ - пи}$     \\
+	$ \rho      \text{ - ро}$      & $ \sigma \text{ - сигма}$   & $ \tau      \text{ - тау}$     & $ \varphi   \text{ - фи}$     \\
+	$ \chi      \text{ - хи}$      & $ \psi   \text{ - пси}$     & $ \omega \text{ - омега}$      & $ $ \\
+	
+\end{tabular}
+\newpage
+\section{Основы:}
+\subsection{Числа:}
+$N$ - Натуральные числа $(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, \ldots)$ \\
+$Z$ - Целые числа = натуральные числа + $0$ + отрицательные числа $(\ldots -5, -4, -3, -2, -1)$ \\
+$Q$ - Рациональные числа = целые числа + несократимые дроби $ \displaystyle \left(\frac{n}{m}:\ n,m \in Z; \ \frac{1}{2},\frac{3}{7}\right)$ \\
+$R$ - Действительные числа = рациональные числа + иррациональные числа $\displaystyle (\sqrt{2},\sqrt{11}, \pi, e)$ \\
+$C$ - Комплексные числа = числа вида: $z = a + bi = r(\cos \phi + i \sin \phi) \ : \ a,b \in R$
+\subsection{Основные законы сложения и умножения:}
+\begin{enumerate}
+	\item $a+b=b+a$ - комутативность по сложению
+	\item $(a+b)+c=a+(b+c)$ - ассоциативность по сложению
+	\item $(a+b)c=ac+bc$ - дистрибутивность по сложению относительно умножения
+\end{enumerate}
+\subsection{Свойства действительных степеней положительных чисел:}
+\begin{tabular}{p{5cm}p{5cm}p{5cm}}
+	$\displaystyle \left( a b \right)^x = a^xb^x$ &
+	$\displaystyle a^xa^y = a^{x+y}             $ &
+	$\displaystyle \left( a^x \right)^y = a^{xy}$ \\
+	$\displaystyle \left( \frac{a}{b} \right)^x = \frac{a^x}{b^x}$ &
+	$\displaystyle \frac{a^x}{a^y} = a^{x-y}                     $ & \\
+\end{tabular}
+\subsection{Логарифмы:}
+$$a^x=b \ \Rightarrow \  x = \log_ab \ \ \ \ \ \ \ \  $$
+\subsection{Основные свойства логарифмоф:}
+\begin{tabular}{p{5cm}p{5cm}p{5cm}}
+	$\displaystyle \log_axy = \log_ax+\log_ay$ & 
+	$\displaystyle \log_a \frac{x}{y} = \log_ax-\log_ay$ &
+	$\displaystyle \log_ax^n = n\log_ax$ \\
+	$\displaystyle \log_{a^m}x^n = \frac{n}{m}\log_ax$ &
+	$\displaystyle \log_ab = \frac{1}{\log_ba}$ &
+	$\displaystyle \log_bx = \frac{\log_ax}{\log_ab}$ \\
+	$\log_aa=1$ & $\log_a1=0$ & $\displaystyle a^{\log_ab}=b$ \\
+\end{tabular}
+\newpage
+\section{Формулы сокращенного умножения:}
+$(a+b)^2 = a^2+2ab+b^2$ \newline
+$(a+b)^3 = a^3+3a^2b+3ab^2+b^3$ \newline
+$(a+b)^4 = a^4+4a^3b+6a^2b^2+4ab^3+b^4$ \newline
+$(a+b)^5 = a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$ \newline
+$\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots$ \newline
+$(a+b)^n = \sum\limits_{i=0}^{n}{C_k^n\ a^i\ b^{n-i}} $ \\ \newline
+$(a+\underbrace{b+c}_{d})^2 = (a+d)^2 = a^2+2ad+d^2 = a^2+2a(b+c)+(b+c)^2 = \\ = a^2+2a(b+c)+b^2+2bc+c^2 = a^2+b^2+c^2+2ab+2ac+2bc$ \newline
+$\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots$ \newline
+$(a_1+\underbrace{a_2+\ldots+a_m}_{A_1})^n = (a_1+A_1)^n = \sum\limits_{i=0}^{n}{C_k^n\ a_1^i\ A_1^{n-i}} = \sum\limits_{i=0}^{n}{C_k^n\ a_1^i\ (a_2+\underbrace{a_3+\ldots+a_m}_{A_2})^{n-i}} = \ldots $
+\subsection{Треугольник Паскаля:}
+\begin{center}
+\begin{tabular}{ccccccccccccccccccccc}
+ &  &  &  &  &  &  &  &  &  & 1  &  &  &  &  &  &  &  &  &  &  \\ 
+ &  &  &  &  &  &  &  &  & 1  &  & 1  &  &  &  &  &  &  &  &  &  \\ 
+ &  &  &  &  &  &  &  & 1  &  & 2  &  & 1  &  &  &  &  &  &  &  &  \\ 
+ &  &  &  &  &  &  & 1  &  & 3  &  & 3  &  & 1  &  &  &  &  &  &  &  \\ 
+ &  &  &  &  &  & 1  &  & 4  &  & 6  &  & 4  &  & 1  &  &  &  &  &  &  \\ 
+ &  &  &  &  & 1  &  & 5  &  & 10  &  & 10  &  & 5  &  & 1  &  &  &  &  &  \\ 
+ &  &  &  & 1  &  & 6  &  & 15  &  & 20  &  & 15  &  & 6  &  & 1  &  &  &  &  \\ 
+ &  &  & 1  &  & 7  &  & 21  &  & 35  &  & 35  &  & 21  &  & 7  &  & 1  &  &  &  \\ 
+ &  & 1  &  & 8  &  & 28  &  & 56  &  & 70  &  & 56  &  & 28  &  & 8  &  & 1  &  &  \\ 
+\end{tabular}
+\end{center}
+$$ C_n^k = \left( \cfrac{n}{k} \right) = \cfrac{n!}{k!(n-k)!} $$
+\newpage
+\section{Неравенства:}
+ Неравенства Бернули: $(1+x_1)(1+x_2)(1+x_3)\cdots(1+x_n)\geq1+x_1+x_2+\ldots+x_n $ \newline
+ Основные неравенства:
+\begin{enumerate}
+	\item $ \displaystyle a+\frac{1}{a}\geq2 \ (a>0) $
+	\item $ \displaystyle \frac{a+b}{2}\geq \sqrt{ab} \ (a\geq0, \ b\geq0) $
+	\item $ |a+b|\leq|a|+|b| $
+	\item $ |a-b|\geq||a|-|b|| $
+	\item $ a^2+b^2\geq2|a||b| $
+\end{enumerate}
+\par \- \newline
+{\tt Формулы сравнения:} \newline
+$$ \text{ Формула Валлиса: } \frac{(2n-1)!!}{(2n)!!}\approx \sqrt{\frac{2}{\pi}}\frac{1}{\sqrt{2n+1}} $$
+$$ \text{ Формула Стирлинга: } n! \approx \sqrt{2\pi} \sqrt{n} \left(\frac{n}{e}\right)^n \left( 1 + \cfrac{1}{12n} + \cfrac{1}{288n^2} + \cfrac{139}{51840n^3} + O \left(n^{-4}\right) \right) $$
+$$ \sqrt{2\pi n} \left(\cfrac{n}{e} \right)^n < n! < \sqrt{2\pi n} \left(\cfrac{n}{e} \right)^n e^{\frac{1}{12n}} $$
+$$ x>1: x!^2 > x^x > x! > x $$
+$$ \log_x n << n^p \left(\forall p\right) << a^n (a>0) << n^n $$
+\par \- \newline
+{\tt Так можно вычислить $pi$:} \newline
+$$ \pi = 6 \arctg \left(\cfrac{1}{\sqrt{3}}\right) = 2\sqrt{3}\sum\limits_{n=0}^{\infty}{\frac{(-1)^n}{(2n+1)3^n}} $$
+\par \- \newline
+{\tt Уравнение касательной и нормали:} \newline
+$$ y(x)=y'(x_0)(x-x_0)+y(x_0) - \text{ уравнение касательной}$$
+$$ y(x)=-\frac{1}{y'(x_0)}(x-x_0)+y(x_0) - \text{ уравнение нормали} $$
+{\tt Эйлеровы интрегралы:} \\ \newline
+$\displaystyle  \texttt{Г}(y)=\int\limits_0^{+\infty}{x^{y-1}e^{-x}\ dx} \ \ \Rightarrow\ \ \texttt{Г}(y+1) = y\,\texttt{Г}(y)$ \newline
+$\displaystyle  B(a,b)=\int\limits_0^{1}{x^{a-1}(1-x)^{b-1}\ dx} \ \ B(a,b)=B(b,a) \ \ B(a,b) = \frac{\texttt{Г}(a)\-\texttt{Г}(b)}{\texttt{Г}(a+b)}$ \newline
+$\displaystyle  B(a,1-a) = \frac{\texttt{Г}(a)\-\texttt{Г}(1-a)}{\texttt{Г}(a+1-a)} = \texttt{Г}(a)\-\texttt{Г}(1-a) = \frac{\pi}{\sin(\pi a)} $
+\newpage
+\section{Производные:}
+\subsection{Таблица производных:}
+\begin{tabular}{ll}
+$\displaystyle (c)' = 0 $                       &   $\displaystyle (\sqrt{x})'=\frac{1}{2\sqrt{x}}      $ \\
+$\displaystyle (x^n)'=nx^{n-1}$                 &   $\displaystyle (\sin(x))'=\cos(x)                          $ \\
+$\displaystyle (\cos(x))'=-\sin(x)$             &   $\displaystyle (\tg(x))'=\frac{1}{\cos^2(x)}               $ \\
+$\displaystyle (\ctg(x))'=-\frac{1}{\sin^2(x)}$ &   $\displaystyle (\arcsin(x))'=\frac{1}{\sqrt{1-x^2}}  	     $ \\
+$\displaystyle (\arccos(x))'=-\frac{1}{\sqrt{1-x^2}}  	$ &   $\displaystyle (\arctg(x))'=\frac{1}{1+x^2}  	   $ \\
+$\displaystyle (\arcctg(x))'=-\frac{1}{1+x^2}  	$ &   $\displaystyle (a^x)'=a^x\ln(a) \, (a>0)     $ \\
+$\displaystyle (\log_ax)'=-\frac{1}{x\ln a}\,\,(a>0);\,(\ln x)'=\frac{1}{x}  $ &  $\displaystyle (\sh x)'=\ch x  $ \\
+$\displaystyle (\ch x)'=\sh x  $ &  $\displaystyle (\th x)'=\frac{1}{\ch^2 x}                                                        $ \\
+$\displaystyle (\cth x)'=-\frac{1}{\sh^2 x}  $ &  $\displaystyle f^{(n)}(x)=(f^{(n-1)}(x))'                                       $ \\
+$\displaystyle (a^x)^{(n)}=a^x \ln^n a \,(a>0)   $ &  $\displaystyle (\sin x)^{(n)} = \sin\left(x+\frac{n\pi}{2}\right)           $ \\
+$\displaystyle (\cos x)^{(n)} = \cos\left(x+\frac{n\pi}{2}\right) $ &  $\displaystyle (x^m)^{(n)} = m(m-1)\dots(m-n+1)x^{m-n}     $ \\
+$\displaystyle (\ln x)^{(n)} = \frac{(-1)^{n-1} (n-1)!}{x^n} $ &  $ \displaystyle(\sqrt[x]{x})' = x^{\frac{1}{x}-2} (1-\ln(x)), \ (x>0)$ \\
+$(|x|)' = \cfrac{x}{|x|} = \sign(x) $ &  $ \left(x^x\right)' = x^x\left(1 + \ln x\right) $ \\
+$(\arsh x)' = \cfrac{1}{\sqrt{x^2 + 1}} $ &  $ (\arch x)' = \cfrac{1}{\sqrt{x^2 - 1}}  $ \\
+$(\arth x)' = \cfrac{1}{1 - x^2} $ &  $ (\arcth x)' = \cfrac{1}{1 - x^2} $ \\
+\end{tabular}
+\subsection{Формула Лейбница: } 
+$$\displaystyle (uv)^{(n)} = \sum_{i=0}^n{C^i_nu^{(n-i)}v^{(i)}} $$
+\subsection{Правила дифференцирования:} 
+\begin{enumerate}
+	\item $(u(x)+v(x))'=u'(x)+v'(x)$
+	\item $(u(x)-v(x))'=u'(x)-v'(x)$
+	\item $(u(x)v(x))'=u'(x)v(x)+u(x)v'(x)$
+	\item $\displaystyle \left(\frac{u(x)}{v(x)}\right)' = \frac{u'(x)v(x)-u(x)v'(x)}{v^2(x)}$
+	\item $(C u(x))'= C u'(x),\ C - const$
+\end{enumerate}  
+\subsection{Преобразование через exp:} 
+$$ a^t = e^{t \ln a} $$
+\newpage
+\par
+\section{Разложения:}
+\subsection{5 основных разложений:}
+\begin{tabular}{lll}
+	$ e^x     $ & $ = \displaystyle \sum\limits_{n=0}^\infty{\frac{x^n}{n!}} $ & $ = \displaystyle 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!} + o(x^n)$ \\
+	$ (1+x)^m $ & $ = \displaystyle  \sum\limits_{k=0}^{n}{\frac{ \prod\limits_{i=0}^{k-1}{(m-i)} }{k!}x^k} $ & $  = \displaystyle 1+mx+\dots+\frac{m(m-1)\dots(m-n+1)}{n!}x^n + o(x^n) $\\
+  $ \ln(1+x)$ & $ = \displaystyle  \sum\limits_{k=0}^{n}{\frac{(-1)^{m-1}}{k}x^k}                         $ & $ = \displaystyle x - \frac{x^2}{2}+\dots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)$\\
+  $ \sin(x) $ & $ = \displaystyle  \sum\limits_{k=0}^{n}{\frac{(-1)^{m-1}}{(2m-1)!}x^{2m-1}}              $ & $ = \displaystyle x - \frac{x^3}{3!} + \dots + (-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!} + o(x^{2n}) $ \\
+  $ \cos(x) $ & $ = \displaystyle  \sum\limits_{k=0}^{n}{\frac{(-1)^{m}}{(2m)!}x^{2m}}                    $ & $ = \displaystyle 1 - \frac{x^2}{2!} + \dots + (-1)^{n}\frac{x^{2n}}{(2n)!} + o(x^{2n+1})  $ \\	
+\end{tabular}
+\newline 
+\subsection{Остальные разложения:}
+$ (2n)!! = 2 \cdot 4 \cdot 6 \cdot \ldots \cdot 2n = 2^n (1 \cdot 2 \cdot 3 \cdot 4 \cdot \ldots \cdot n)=2^n\ n! $
+\newline \newline \newline
+$\displaystyle \tg(x) = x+\cfrac{1}{3}x^{3}+\cfrac{2}{15} {x}^{5}+{\cfrac {17}{315}} {x}^{7}+{\cfrac {62}{2835}} {x}^{9}
+\mbox{}+{\cfrac {1382}{155925}} {x}^{11}+O \left( {x}^{12} \right) $
+\newline \newline
+$\displaystyle  \arctg(x) = \sum\limits_{n=0}^\infty{\cfrac{(-1)^n}{2n+1}\ x^{2n+1}}, \ \ \forall x: |x|<1 = x-\frac{1}{3} {x}^{3}+\frac{1}{5} {x}^{5}-\frac{1}{7} {x}^{7}+\frac{1}{9} {x}^{9}-\frac{1}{11} {x}^{11}+\frac{1}{13} {x}^{13}+O \left( {x}^{14} \right)$
+\newline \newline
+$\displaystyle \arcsin(x) = \sum\limits_{n=0}^\infty{\cfrac{(2n)!}{4^n(n!)^2(2n+1)}\ x^{2n+1}}, \ \ \forall x: |x|<1 = x+\cfrac{1}{6} {x}^{3}+{\cfrac {3}{40}} {x}^{5}+{\cfrac {5}{112}} {x}^{7} + {\cfrac {35}{1152}} {x}^{9}+O \left( {x}^{10} \right)$
+\newline \newline
+$\displaystyle \arccos(x) = \frac{\pi}{2} - x - \sum\limits_{n=0}^\infty{\frac{(2n-1)!!}{(2n)!!}\frac{x^{2n+1}}{2n+1}} = \frac{1}{2} \pi -x-\frac{1}{6} {x}^{3}-{\frac {3}{40}} {x}^{5} + O \left( {x}^{7} \right)$
+\newline \newline
+$\displaystyle \ch(x) = \sum\limits_{n=0}^\infty{\frac{x^{2n}}{(2n)!}} = 1+\frac{1}{2}x^2+\frac{1}{24}x^4+\frac{1}{720}x^6+\frac{1}{40320}x^8+\frac{1}{3628800}x^{10} + O\left( {x}^{12} \right)\ \ \forall x$
+\newline \newline
+$\displaystyle \sh(x) = \sum\limits_{n=0}^\infty{\frac{x^{2n+1}}{(2n+1)!}} =  x+\frac{1}{6}x^3+\frac{1}{120}x^5+\frac{1}{5040}x^7+\frac{1}{362880}x^9+\frac{1}{39916800}x^{11} + O\left( {x}^{12} \right)\ \ \forall x$
+\newline \newline
+$\displaystyle \th(x) = x-\frac{1}{3}x^3+\frac{2}{15}x^5-\frac{17}{315}x^7+\frac{62}{2835}x^9-\frac{1382}{155925}x^{11} + O\left( {x}^{12} \right)$
+\par \- \newline
+$\displaystyle \frac{1}{1+x} = (1+x)^{-1} = \sum\limits_{n=0}^\infty{(-1)^n x^n} = 1-x+x^2-x^3+x^4-x^5+x^6-x^7+ O\left( {x}^{8} \right)$
+\par \- \newline
+$\displaystyle \frac{1}{\sqrt{1-x^2}} = (1-x^2)^{-\left(\frac{1}{2}\right)} = 1 + \sum\limits_{n=1}^\infty{\frac{(2n-1)!!\ x^{2n}}{(2n)!!}} $
+\par \- \newline
+$\displaystyle \frac{1}{\sqrt{1-x^2}} = 1 + \sum\limits_{n=1}^\infty{\frac{(2n-1)!!\ x^{2n}}{2^n\ n!}} = 1+\frac{1}{2}x^2+\frac{3}{8}x^4+\frac{5}{16}x^6+\frac{35}{128}x^8+ O\left({x}^{10} \right)$
+\par \- \newline
+\subsection{Формула Тейлора:}
+$$ \displaystyle f(x)=\sum\limits_{k=0}^n{\displaystyle\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+R_{n+1}(x)} $$
+Остаточный член в форме Лагранжа:
+$$ R_{n+1} = \cfrac{(x-a)^{n+1}}{(n+1)!}\ f^{(n+1)} \left[a + \Theta(x-a)\right] $$
+Остаточный член в форме Коши:
+$$ R_{n+1} = \cfrac{(x-a)^{n+1}(1-\theta)^n}{n!}\ f^{(n+1)} \left[a + \Theta(x-a)\right] $$
+Остаточный член в форме Пеано:
+$$ R_{n+1} = o\left[(x-a)^n\right] $$
+\subsection{Формула Маклорена:}
+$ \displaystyle f(x)=\sum\limits_{k=0}^n{\displaystyle\frac{f^{(k)}(0)}{k!}x^k+o(x^n)} $ \newline
+\subsection{Эквивалентность:}
+  $x\rightarrow 0 \ |\ln x|< \displaystyle \frac{1}{x^\varepsilon } \ \ \ \forall \varepsilon>0$ \\
+  $x\rightarrow 1 \ \ln x\approx x-1 $ \\
+  $x\rightarrow +\infty \ \ln x< x^\varepsilon \ \ \ \forall \varepsilon>0$ \\
+  $x \approx \arcsin{x}\approx \sin{x}\approx \tg{x} \approx \arctg{x} $ \\
+\newpage
+\par
+\section{Таблица простейших интегралов:}
+\begin{tabular}{ll}
+$\displaystyle \int{x^ndx} = \frac{x^{n+1}}{n+1} + C \ (n\neq-1) $ &
+$\displaystyle \int{\frac{dx}{x}}=\ln |x| + C \ (x\neq0)         $ \\
+$\displaystyle \int{\frac{dx}{1+x^2}} = \left\{\begin{array}{ccc} \arctg (x) & + & C \\-\arcctg(x) & + & C
+\end{array}\right. $ & 
+$\displaystyle \int{\frac{dx}{1-x^2}} = \frac{1}{2} \ln \left| \frac{1+x}{1-x} \right| + C $ \\
+$\displaystyle \int{\frac{dx}{\sqrt{1-x^2}}} = \left\{ \begin{array}{ccc} \arcsin (x) & + & C \\ -\arccos(x) & + & C \end{array}\right. $ &
+$\displaystyle \int{\frac{dx}{\sqrt{x^2\pm1}}} = \ln \left|x+\sqrt{x^2\pm1} \right| + C$ \\
+$\displaystyle \int{a^x dx} = \frac{a^x}{\ln a} + C \ (a>0,a\neq1)$ &
+$\displaystyle \int{\sin x dx} = -\cos x + C $ \\
+$\displaystyle \int{\cos x dx} = \sin x + C $ &
+$\displaystyle \int{\frac{dx}{\sin^2x}} = -\ctg x + C $ \\
+$\displaystyle \int{\frac{dx}{\cos^2x}} = \tg x + C $ &  
+$\displaystyle \int{\sh x dx} = \ch x + C $ \\
+$\displaystyle \int{\ch x dx} = \sh x + C $ &
+$\displaystyle \int{\frac{dx}{\sh^2x}} = -\cth x + C $ \\
+$\displaystyle \int{\frac{dx}{\ch^2x}} = \th x + C $ & 
+$\displaystyle \int{\frac{dx}{a^2+x^2}} = \frac{1}{a}  \arctg \frac{x}{a} + C \ (a\neq0) $ \\
+$\displaystyle \int{\frac{dx}{a^2-x^2}} = \frac{1}{2a} \ln \left|\frac{a+x}{a-x}\right| + C \ (a\neq0) $ &
+$\displaystyle \int{\frac{x\,dx}{a^2\pm x^2}} = \frac{1}{2} \ln \left|a^2\pm x^2\right| + C $ \\
+$\displaystyle \int{\ln x dx} = x(\ln x - 1) + C$ &
+$\displaystyle \int{\frac{dx}{\ln x}} = \text{li}\,(x)$ \\
+\end{tabular} 
+\par \- \newline
+\par \- \newline
+\begin{tabular}{l}
+$ \displaystyle \int{\frac{dx}{\sqrt{a^2-x^2}}} = \arcsin \frac{x}{a} + C \ (a>0) $ \\
+$ \displaystyle \int{\sqrt{a^2-x^2}\ dx} = \frac x2\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin \frac{x}{a} + C \ (a>0) $ \\
+$ \displaystyle \int{\frac{dx}{\sqrt{x^2\pm a^2}}} = \ln \left|x+\sqrt{x^2\pm a^2} \right| + C \ (a>0) $ \\
+$ \displaystyle \int{\frac{xdx}{\sqrt{a^2 \pm x^2}}} = \pm \sqrt{a^2 \pm x^2} + C \ (a>0) $ \\
+$ \displaystyle \int{\sqrt{x^2\pm a^2} dx} = \frac{x}{2} \sqrt{x^2\pm a^2} \pm \frac{a^2}{2} \ln \left|x+\sqrt{x^2\pm a^2}\right| + C \ (a>0) $ \\
+\end{tabular}
+\par \- \newline
+{\tt Мотоды решения:}
+\begin{enumerate}
+	\item $ \displaystyle \int\limits_a^b {f(x)\ dx} = F(b)-F(a) = F(x)\biggr |^b_a$
+	\item $ \displaystyle \int\limits_a^b {u\,dv} = \left.\frac{}{} u\,v \right|_a^b -\int\limits_a^b{v\, du} $ 
+\end{enumerate}
+\newpage 
+\par \- \newline
+{\tt Формула Фруллани:}
+$\displaystyle \int\limits_0^\infty{\frac{f(ax)-f(bx)}{x}\ dx} = [f(0)-f(+\infty)]\ln{\frac{b}{a}} \ \ (a>0,b>0) $
+\\ {\tt Формула Эйлера - Пуассона:}
+$\displaystyle \int\limits_0^\infty{e^{-x^2} dx} = \frac{\sqrt{\pi}}{2} $
+\\ {\tt Интеграл Дирихле:}
+$\displaystyle D(\beta) = \int\limits_0^\infty{\frac{\sin(\beta x)}{x}\ dx} = \frac{\pi}{2} \sign{\beta} $
+\\ {\tt Интеграл Лапласа:}
+$\displaystyle L = \int\limits_0^\infty{\frac{\cos(ax)}{1+x^2}\ dx} = \frac{\pi}{2}\ e^{-|a|}$
+\\ {\tt Интегралы Френеля:} $\displaystyle L = \int\limits_0^\infty{\sin(x^2) dx} = \frac{1}{2} \int\limits_0^\infty{\frac{\sin x}{\sqrt{x}}\ dx} = \frac{1}{2}\sqrt{\frac{\pi}{2}}$ \\
+{\tt Интегралы Френеля:} $\displaystyle L = \int\limits_0^\infty{\cos(x^2) dx} = \frac{1}{2} \int\limits_0^\infty{\frac{\cos x}{\sqrt{x}}\ dx} = \frac{1}{2}\sqrt{\frac{\pi}{2}}$ \\
+{\tt Интегралы Френеля:} $\displaystyle \int\limits_0^\infty{e^{-\alpha x} \cos \beta x \ dx} = \frac{\alpha}{\alpha^2+\beta^2} $ \\
+{\tt Эйлеровы интегралы:} 
+$$ \Gamma(y) = \int\limits_0^\infty{x^{y-1}e^{-x}dx} = \cfrac{1}{y} \cdot \Gamma(y+1) $$
+$$ \Gamma^{(n)}(y) = \int\limits_0^\infty{x^{y-1}e^{-x}\ln^{n}x\ dx} $$
+$$ B(a,b) = \int\limits^\infty_0{x^{a-1}(1-x)^{b-1}dx} = \cfrac{\Gamma(a) \cdot \Gamma(b)}{\Gamma(a+b)} $$
+$$ \int\limits_0^{\pi/2}{\sin^{a-1} x \cos^{b-1} x\ dx} = \cfrac{1}{2} \cdot B \left(\cfrac{a}{2}\ ;\cfrac{b}{2}\right) =\cfrac{\Gamma\left(\cfrac a 2 \right)\cdot\Gamma\left(\cfrac b 2 \right)}{2\Gamma\left(\cfrac{a+b}{2}\right)}$$
+
+ \par \- \newline
+\newpage
+\section{Двойные и тройные интегралы:}
+$\displaystyle \int\limits_{ \ D}\!\!\!\!\int{f(x,y)dD} = \int\limits_a^b{dx}\int\limits_{u(x)}^{v(x)}{f(x,y) dy} $ \\
+$\displaystyle \int\limits_{ \ D}\!\!\!\!\int{f(x,y)dxdy} = \int\limits_{ \ T}\!\!\!\!\int{f(x(t,\tau),y(t,\tau))\left|J(t,\tau)\right|dtd\tau},\ \text{где}\ \ \ J(t,\tau) = \frac{\partial(x,y)}{\partial(t,\tau)} $ \\
+$\displaystyle \left\{ \begin{array}{lll}
+        									x & = & r\cos \phi \\
+				             			y & = & r\sin \phi
+					           \end{array}
+							 \right. \Rightarrow J = r$ \\
+$\displaystyle \left\{ \begin{array}{lll}
+        									x & = & ar\cos \phi \\
+				             			y & = & br\sin \phi
+					           \end{array}
+							 \right. \Rightarrow J = abr$ \\
+$\displaystyle \Delta S = \int\limits_{ \ D}\!\!\!\!\int{\sqrt{{z_x'}^2+{z_y'}^2+1}} $ \\	
+Площадь гладкой поверхности заданной параметрически: \\
+$\displaystyle  T: \left\{ \begin{array}{lll}
+        									x & = & x(t,\tau) \\
+				             			y & = & y(t,\tau) \\
+				             			z & = & z(t,\tau)
+					           \end{array}
+							 \right.\ \ \ T\rightarrow D \ \ D: \left\{ \begin{array}{lll}
+        									x & = & x(t,\tau) \\
+				             			y & = & y(t,\tau)
+				           \end{array}
+							 \right.$ \\
+Гаусовы коэффиенты: \\ 
+$E={x_t'}^2+{y_t'}^2+{z_t'}^2 \\
+G={x_{\tau}'}^2+{y_{\tau}'}^2+{z_{\tau}'}^2 \\
+F=x_t'x_{\tau}'+y_t'y_{\tau}'+z_t'z_{\tau}'$ \\
+$\displaystyle \Delta S = \int\limits_{ \ T}\!\!\!\!\int{\sqrt{EG-F^2}}\ dtd\tau $ \\	
+$\displaystyle \int\!\!\!\!\int\limits_{D}\!\!\!\!\int{ f(x,y,z)dD = \int\limits_a^b dx \int\limits_c^d dy \int\limits_e^g f(x,y,z) dz} $ \\
+$\displaystyle J = \frac{\partial(x,y,z)}{\partial(t,u,v)} = \left| 
+																																		\begin{array}{lll}
+        																																x_t' & x_u' & x_v' \\
+				         																							    			y_t' & y_u' & y_v' \\
+				       																												  z_t' & z_u' & z_v'
+					    																											\end{array}
+																														 \right| $  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+$\displaystyle  \left\{ 
+											\begin{array}{lll}
+        									x & = & r \cos \psi \cos \phi \\
+				         					y & = & r \cos \psi \sin \phi \\
+				       					  z & = & r \sin \psi
+					    				\end{array}
+		  					 \right.  \Rightarrow J = r^2 \cos \psi $\\
+$\displaystyle  \left\{ 
+											\begin{array}{lll}
+        									x & = & r \cos \phi \sin \psi \\
+				         					y & = & r \sin \phi \sin \psi \\
+				       					  z & = & r \cos \psi
+					    				\end{array}
+		  					 \right.  \Rightarrow J = r^2 \sin \psi$ \ \ \ \ \ \ \ 
+$\displaystyle  \left\{ 
+											\begin{array}{lll}
+        									x & = & ar \cos \phi \sin \psi \\
+				         					y & = & br \sin \phi \sin \psi \\
+				       					  z & = & cr \cos \psi
+					    				\end{array}
+		  					 \right.  \Rightarrow J = abcr^2 \sin \psi$\\
+$\displaystyle  \left\{ 
+											\begin{array}{lll}
+        									x & = & r \cos \phi \\
+				         					y & = & r \sin \phi \\
+				       					  z & = & z
+					    				\end{array}
+		  					 \right.  \Rightarrow J = r $ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+$\displaystyle  \left\{ 
+											\begin{array}{lll}
+        									x & = & ar \cos \phi \\
+				         					y & = & br \sin \phi \\
+				       					  z & = & z
+					    				\end{array}
+		  					 \right.  \Rightarrow J = abr $\\
+Криволинейный интеграл 1 рода по плоской кривой: \\
+$\displaystyle y=y(x) \ \ \ \ l =\int\limits_a^b{ \sqrt{1+{y'}^2} dx}; \ \ \ \ \ \ \ \ \ \ \ \ x=x(t); y=y(t) \ \ \ \ l=\int\limits_{t_0}^T{\sqrt{{x'}^2+{y'}^2} dt}$	\\
+Криволинейный интеграл 1 рода по плоской кривой:\\
+$\displaystyle x=x(t), y=y(t) \ \ \ \ \ \ \ \ \ \int\limits_L{f(x,y)ds} = \int\limits_{t_0}^T{f(x,y)\sqrt{{x'}^2+{y'}^2} dt} $\\
+Криволинейный интеграл 1 рода по пространственной кривой:\\
+$\displaystyle x=x(t), y=y(t), z=z(t) \ \ \ \ \ \int\limits_L{f(x,y,z)ds} = \int\limits_{t_0}^T{f(x,y,z)\sqrt{{x'}^2+{y'}^2+{z'}^2} dt} $\\
+Интеграл 2 рода по плоской кривой = криволинейному интегралу 2 рода:\\
+$\displaystyle x=x(t), y=y(y) \ \ \ \ \ \int\limits_L{P(x,y)dx+Q(x,y)dy} = \int\limits_{t_0}^T{\left( P(x(t),y(t))x_t'+Q(x(t),y(t))y_t'\right)dt}$ \\
+Связь между интегралом 1 и 2 рода: \\
+$\displaystyle \int\limits_L{P dx + Q dy} = \int\limits_L{ (P \cos \alpha + Q \sin \alpha) ds} $ \\
+Интеграл 2 рода по плоскому контуру. \\
+$\displaystyle \int\limits_a^b{(Y(x)-y_0(x))dx} = - \oint\limits_{c*}{y dx}$\\
+Фомула Грина: \\
+$\displaystyle \int\limits_L{P(x,y)dx + Q(x,y)dy} = \int\limits_D\!\!\!\!\int{(Q_x'(x,y)-P_y'(x,y))dxdy} $ \\
+Интеграл 2 рода по пространственной кривой: \\
+$\displaystyle \int_L{Pdx+Qdy+Rdz} = \int\limits_{t_0}^T{(P(x(t),y(t),z(t))x_t' + Q(x(t),y(t),z(t))y_t' + R(x(t),y(t),z(t))z_t') dt} $ \\
+Интеграл 1 рода по поверхности: \\
+$\displaystyle \int\limits_{\ S}\!\!\!\!\int{f(x,y,z)ds} = \int\limits_{\ T}\!\!\!\!\int{ f(x(t,\tau),y(t,\tau),z(t,\tau))\sqrt{EG - F^2} dt d\tau} $ \\
+$\displaystyle 
+\left\{ 
+\begin{array}{lll}
+	x & = & R \cos t \cos \tau \\
+	y & = & R \sin t \cos \tau \\
+	z & = & R \sin \tau
+\end{array}
+\right. \Rightarrow \sqrt{EG-F^2} = R \cos \tau$ \ \ \ \ 
+$\displaystyle 
+\left\{ 
+\begin{array}{lll}
+	x & = & R \cos t \\
+	y & = & R \sin t \\
+	z & = & \tau
+\end{array}
+\right. \Rightarrow \sqrt{EG-F^2} = R $ \\
+Поверхностный интеграл 2 рода: \\
+$\displaystyle \int\limits_{\ S}\!\!\!\!\int{ P(x,y,z)dydz + Q(x,y,z)dzdx + R(x,y,z)dxdy} = \\ = \int\limits_{\ T}\!\!\!\!\int{(P(V(u,v))A + Q(V(u,v))B+R(V(u,v))C) du dv}, \ V(u,v) = x(u,v),y(u,v),z(u,v)\\
+ A = \frac{\partial{(y,z)}}{\partial{(u,v)}}=\left|
+\begin{array}{ll}
+	y_u' & y_v' \\
+	z_u' & z_v' 
+\end{array}
+\right| \ \ \ \ \ \ \ 
+ B = \frac{\partial{(z,x)}}{\partial{(u,v)}}=\left|
+\begin{array}{ll}
+	z_u' & z_v' \\
+	x_u' & x_v' 
+\end{array}
+\right| \ \ \ \ \ \ \ 
+ C = \frac{\partial{(x,y)}}{\partial{(u,v)}}=\left|
+\begin{array}{ll}
+	x_u' & x_v' \\
+	y_u' & y_v' 
+\end{array}
+\right|  $ \\
+Соотнешение между интегралами 1 и 2 рода: \\
+$\displaystyle \int\limits_{ \ S}\!\!\!\!\int{ P\ dydz + Q\ dzdx + R\ dxdy} = \int\limits_{ \ S}\!\!\!\!\int{ (P\cos \alpha + Q \cos \beta + R \cos \gamma ) dS} $\\
+Формула Стокса:   \\
+$\displaystyle \oint\limits_C{P\ dx + Q\ dy + R\ dz} = \int\limits_{ \ S}\!\!\!\!\int{  
+\left|
+\begin{array}{ccc}
+	\cos \alpha & \cos \beta & \cos \gamma \\
+	\displaystyle \frac{\partial}{\partial x} & \displaystyle \frac{\partial}{\partial y} & \displaystyle \frac{\partial}{\partial z} \\
+	P & Q & R 
+\end{array}
+\right|  dS } $ \\
+Формула Остроградского: \\
+$\displaystyle \int\limits_{ \ S}\!\!\!\!\int{ (P\cos \alpha + Q \cos \beta + R \cos \gamma ) dS} = \int\!\!\!\!\int\limits_{V}\!\!\!\!\int{ \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \right)\ dx\ dy\ dz } $ \\
+\newpage
+\section{Тригонометрия:}
+\subsection{Соотношение между функциями одного угла:}
+\begin{enumerate}
+	\item $\tg \alpha =\displaystyle \frac{\sin \alpha}{\cos \alpha}	$
+	\item $\ctg \alpha =\displaystyle \frac{\cos \alpha}{\sin \alpha}	$
+	\item $\tg \alpha \cdot \ctg \alpha = 1$
+	\item $\sin^2 \alpha = \displaystyle \frac{1}{1+\ctg^2 \alpha}=\frac{\tg^2 \alpha}{1+\tg^2 \alpha} $
+	\item $\cos^2 \alpha = \displaystyle \frac{1}{1+\tg^2 \alpha}=\frac{\ctg^2 \alpha}{1+\tg^2 \alpha} $
+\end{enumerate}
+\subsection{Формулы сложения и вычитания:}
+\begin{enumerate}
+	\item $\sin(\alpha\pm\beta) = \sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta)$
+	\item $\cos(\alpha\pm\beta) = \sin(\alpha)\cos(\beta)\mp\cos(\alpha)\sin(\beta)$
+	\item $\tg(\alpha\pm\beta) = \displaystyle \frac{\tg(\alpha)\pm\tg(\beta)}{1\mp\tg(\alpha)\tg(\beta)}$
+\end{enumerate}
+\subsection{Формулы двойных, тройных и половинных углов:}
+\begin{enumerate}
+	\item $\sin 2\alpha = 2\sin \alpha \cos \alpha$
+	\item $\cos 2\alpha = \cos^2 \alpha - \sin^2 \alpha = 1-2\sin^2 \alpha = 2\cos^2 \alpha - 1$
+	\item $\tg 2 \alpha = \displaystyle \frac{2\tg \alpha}{1-\tg^2 \alpha}$
+	\item $\ctg 2 \alpha = \displaystyle \frac{\ctg^2 \alpha-1}{2\ctg \alpha}$
+	\item $\sin 3\alpha = 3\sin \alpha - 4 \sin^4 \alpha$
+	\item $\cos 3\alpha = 4\cos^4 \alpha - 3 \cos \alpha$
+	\item $\tg 3\alpha = \displaystyle \frac{3\tg \alpha - \tg^3\alpha}{1-3\tg^2\alpha}$
+	\item $\ctg 3 \alpha =\displaystyle \frac{\ctg^3\alpha-3\ctg \alpha}{3\ctg ^2 \alpha -1}$
+	\item $\sin \left(\displaystyle\frac{\alpha}{2}\right) = \pm \sqrt{\displaystyle \frac{1-\cos(\alpha)}{2}} \Rightarrow \sin^2\left(\displaystyle\frac{\alpha}{2}\right) = \displaystyle \frac{1-\cos(\alpha)}{2} $
+	\item $\cos \left(\displaystyle\frac{\alpha}{2}\right) = \pm \sqrt{\displaystyle \frac{1+\cos(\alpha)}{2}} \Rightarrow \cos^2\left(\displaystyle\frac{\alpha}{2}\right) = \displaystyle \frac{1+\cos(\alpha)}{2} $
+	\item $\tg \left(\displaystyle\frac{\alpha}{2}\right) = \pm \sqrt{\displaystyle\frac{1-\cos \alpha}{1+\cos \alpha}} = \displaystyle\frac{\sin \alpha}{1+\cos \alpha} = \frac{1-\cos \alpha}{\sin \alpha}$
+	\item $\ctg \left(\displaystyle\frac{\alpha}{2}\right) = \pm \sqrt{\displaystyle\frac{1+\cos \alpha}{1-\cos \alpha}} = \displaystyle\frac{\sin \alpha}{1-\cos \alpha} = \frac{1+\cos \alpha}{\sin \alpha}$
+\end{enumerate}
+\subsection{Преобразование суммы тригонометрических функций в произведение:}
+\begin{enumerate}
+	\item $ \sin(\alpha)+\sin(\beta) =\displaystyle   2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right) $ \\
+	\item $ \sin(\alpha)-\sin(\beta) =\displaystyle   2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right) $ \\
+	\item $ \cos(\alpha)+\cos(\beta) =\displaystyle   2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right) $ \\
+	\item $ \cos(\alpha)-\cos(\beta) =\displaystyle  -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right) $ \\
+\end{enumerate}
+\subsection{Преобразование произведения в сумму:}
+\begin{enumerate}
+	\item $ \sin(\alpha)\sin(\beta) =\displaystyle  \frac{1}{2} [\cos(\alpha-\beta) - \cos(\alpha+\beta)]$ \\
+	\item $ \sin(\alpha)\cos(\beta) =\displaystyle  \frac{1}{2} [\sin(\alpha+\beta) + \sin(\alpha-\beta)]$ \\
+	\item $ \cos(\alpha)\cos(\beta) =\displaystyle  \frac{1}{2} [\cos(\alpha+\beta) + \cos(\alpha-\beta)]$ \\
+\end{enumerate}
+\subsection{Универсальная тригонометрическая подстановка:}
+\begin{enumerate}
+	\item $ \sin(\alpha) =\displaystyle \frac{2\tg\left(\displaystyle\frac{\alpha}{2}\right)}{1+\tg^2\left(\displaystyle\frac{\alpha}{2}\right)}$
+	\item $ \cos(\alpha) =\displaystyle \frac{1-\tg^2\left(\displaystyle\frac{\alpha}{2}\right)}{1+\tg^2\left(\displaystyle\frac{\alpha}{2}\right)}$ 
+	\item $ \tg(\alpha)  =\displaystyle \frac{2\tg\left(\displaystyle\frac{\alpha}{2}\right)}{1-\tg^2\left(\displaystyle\frac{\alpha}{2}\right)}$
+\end{enumerate}
+\subsection{Некоторые важные соотношения:}
+\begin{enumerate}
+	\item $\displaystyle \sum\limits_{i=0}^{n} \sin i\alpha = \displaystyle  \frac{\cos\left(\displaystyle \frac{\alpha}{2}\right)-\cos(2n+1)\left(\displaystyle \frac{\alpha}{2}\right)}{2\sin\left(\displaystyle \frac{\alpha}{2}\right)}$ 
+	\item $\displaystyle \sum\limits_{i=0}^{n} \cos i\alpha = \displaystyle  \frac{\sin(2n+1)\left(\displaystyle \frac{\alpha}{2}\right)-\sin\left(\displaystyle \frac{\alpha}{2}\right)}{2\sin\left(\displaystyle \frac{\alpha}{2}\right)}$ 
+	\item $\cos n\alpha = \cos^n \alpha + C^2_n\cos^{n-2}\alpha\sin^2\alpha + C^4_n\cos^{n-4}\alpha\sin^4\alpha - \ldots$
+	\item $\sin n\alpha = n\cos^{n-1} \alpha \sin \alpha - C^3_n\cos^{n-3}\alpha\sin^3\alpha + C^5_n\cos^{n-5}\alpha\sin^5\alpha - \ldots$
+\end{enumerate}
+\subsection{Другие формулы:}
+\begin{enumerate}
+	\item $\displaystyle 1 \pm \tg\alpha \tg\beta = \frac{\cos(\alpha\mp\beta)}{\cos\alpha\cos\beta}$
+	\item $\displaystyle \ctg\alpha \ctg\beta \pm 1 = \frac{\cos(\alpha\mp\beta)}{\sin\alpha\sin\beta}$
+	\item $\displaystyle 1-\tg^2\alpha = \frac{\cos 2\alpha}{\cos^2\alpha}$
+	\item $\displaystyle 1-\ctg^2\alpha = -\frac{\cos 2\alpha}{\sin^2\alpha}$
+	\item $\displaystyle \tg^2\alpha - \tg^2\beta  = \frac{\sin(\alpha+\beta)\sin(\alpha-\beta)}{\cos^2\alpha\cos^2\beta}$
+	\item $\displaystyle \ctg^2\alpha - \ctg^2\beta  = \frac{\sin(\alpha+\beta)\sin(\alpha-\beta)}{\sin^2\alpha\sin^2\beta}$
+	\item $\tg^2\alpha - \sin^2\alpha = \tg^2\alpha \sin^2\alpha $
+	\item $\ctg^2\alpha - \cos^2\alpha = \ctg^2\alpha \cos^2\alpha $
+\end{enumerate} 
+
+\newpage
+\section{Таблица констант}
+\subsection{Факториалы}
+
+
+\begin{tabular}{ll}
+1!  = 1 & 17! = 355687428096000 \\
+2!  = 2 & 18! = 6402373705728000 \\
+3!  = 6 & 19! = 121645100408832000 \\
+4!  = 24 & 20! = 2432902008176640000 \\
+5!  = 120 & 21! = 51090942171709440000 \\
+6!  = 720 & 22! = 1124000727777607680000 \\
+7!  = 5040 & 23! = 25852016738884976640000 \\
+8!  = 40320  & 24! = 620448401733239439360000 \\
+9!  = 362880 & 25! = 15511210043330985984000000 \\
+10! = 3628800 & 26! = 403291461126605635584000000 \\
+11! = 39916800 &  27! = 10888869450418352160768000000 \\
+12! = 479001600 & 28! = 304888344611713860501504000000 \\
+13! = 6227020800 & 29! = 8841761993739701954543616000000 \\
+14! = 87178291200 & 30! = 265252859812191058636308480000000 \\
+15! = 1307674368000 & 31! = 8222838654177922817725562880000000 \\
+16! = 20922789888000 & 
+\end{tabular}
+
+\begin{tabular}{l}
+314! = \\
+2065913788050307179138063781843957100713312943681905646584753601705317689969\\
+2160345149663278684609438960910162610648177545579277167001701924427200484080\\
+5112426377571750377767242515127611496528298224886536558290613236382839497709\\
+1205890547695526152937530587052641222934112797815637531628425780896410880366\\
+5013084709514051029432670718461463522339767687828093878998487884593050868977\\
+2801127402422893610446503743175039581919648887554826733722918769794271032225\\
+3917260201044967689266790995829304679365833100364514565904733392955236565945\\
+3811997786326119570813236432202369408696320000000000000000000000000000000000\\
+000000000000000000000000000000000000000000 \\
+\\
+614! =\\
+1179780069431809539465878345415887554746548232925885681952932115077899252245\\
+9792641560806964950604099790332724464879837133658662661505765798957427180626\\
+7011230318114993294695964550620442246203363077411149221765954126578393387073\\
+7004745437969247652651564858515407435134668989910352218525112352104323184833\\
+1474354654572595511903282999749193677375582739813908992389148551965911698991\\
+2400218302808522964848036459073666149266902373180453691005003999481345409397\\
+6662347773708015629805292131525741078514979475999866561449742736870946801929\\
+2624472512824801326501474374815609277956196568712261533695761928371942530523\\
+7386322377329043231473666765261763276057777622339683866975372323272131337073\\
+4374763197743125163015922143403333934429870974355617588379163137714309631866\\
+8605148150893488507622961834263210698513847336824432066119800334857749742368\\
+1100559816314390070891957866073013694435833275386017155889843130333337252794\\
+9651440199276311114218029992954561258867959235402028097475354066907471013017\\
+8070572469432226417916767325059960733249190648735055518325213644586030100720\\
+1558818388274061385038831592115139742024899015814551693068605143756213088145\\
+2972613231990899349568564668043174366932942983038263247555263969038287122405\\
+1908510632129481085028106489738588789350251484821816330504499502952103603299\\
+4181120000000000000000000000000000000000000000000000000000000000000000000000\\
+0000000000000000000000000000000000000000000000000000000000000000000000000000\\
+0000
+
+\end{tabular}
+
+\newpage
+\subsection{Интеграл}
+\begin{center}
+$$ \Phi(x) = \frac{1}{\sqrt{2\pi}}\int\limits^{x}_{-\infty}{\displaystyle e^{\frac{-t^2}{2}}}dt$$
+\footnotesize
+\begin{tabular}{lllllllllll}
+ x & 0.00&    0.01&    0.02&    0.03&    0.04&    0.05&    0.06&    0.07&    0.08&    0.09 \\
+0.0& 0.500000&0.503990&0.507979&0.511967&0.515954&0.519939&0.523923&0.527904&0.531882&0.535857 \\
+0.1& 0.539828&0.543796&0.547759&0.551717&0.555670&0.559618&0.563560&0.567495&0.571424&0.575346 \\
+0.2& 0.579260&0.583167&0.587065&0.590955&0.594835&0.598707&0.602569&0.606420&0.610262&0.614092 \\
+0.3& 0.617912&0.621720&0.625516&0.629300&0.633072&0.636831&0.640577&0.644309&0.648028&0.651732 \\
+0.4& 0.655422&0.659097&0.662758&0.666403&0.670032&0.673645&0.677242&0.680823&0.684387&0.687933 \\
+0.5& 0.691463&0.694975&0.698469&0.701944&0.705402&0.708841&0.712261&0.715662&0.719043&0.722405 \\
+0.6& 0.725747&0.729069&0.732371&0.735653&0.738914&0.742154&0.745373&0.748571&0.751748&0.754903 \\
+0.7& 0.758037&0.761148&0.764238&0.767305&0.770350&0.773373&0.776373&0.779350&0.782305&0.785236 \\
+0.8& 0.788145&0.791030&0.793892&0.796731&0.799546&0.802338&0.805106&0.807850&0.810571&0.813267 \\
+0.9& 0.815940&0.818589&0.821214&0.823815&0.826392&0.828944&0.831473&0.833977&0.836457&0.838913 \\
+1.0& 0.841345&0.843753&0.846136&0.848495&0.850830&0.853141&0.855428&0.857691&0.859929&0.862144 \\
+1.1& 0.864334&0.866501&0.868643&0.870762&0.872857&0.874928&0.876976&0.879000&0.881000&0.882977 \\
+1.2& 0.884931&0.886861&0.888768&0.890652&0.892513&0.894350&0.896166&0.897958&0.899728&0.901475 \\
+1.3& 0.903200&0.904902&0.906583&0.908241&0.909878&0.911492&0.913085&0.914657&0.916207&0.917736 \\
+1.4& 0.919244&0.920730&0.922196&0.923642&0.925066&0.926471&0.927855&0.929219&0.930564&0.931888 \\
+1.5& 0.933193&0.934478&0.935745&0.936992&0.938220&0.939429&0.940620&0.941793&0.942947&0.944083 \\
+1.6& 0.945201&0.946301&0.947384&0.948449&0.949498&0.950529&0.951543&0.952540&0.953521&0.954486 \\
+1.7& 0.955435&0.956367&0.957284&0.958185&0.959071&0.959941&0.960796&0.961637&0.962462&0.963273 \\
+1.8& 0.964070&0.964852&0.965621&0.966375&0.967116&0.967843&0.968557&0.969258&0.969946&0.970621 \\
+1.9& 0.971284&0.971933&0.972571&0.973197&0.973810&0.974412&0.975002&0.975581&0.976148&0.976705 \\
+2.0& 0.977250&0.977784&0.978308&0.978822&0.979325&0.979818&0.980301&0.980774&0.981237&0.981691 \\
+2.1& 0.982136&0.982571&0.982997&0.983414&0.983823&0.984222&0.984614&0.984997&0.985371&0.985738 \\
+2.2& 0.986097&0.986447&0.986791&0.987126&0.987455&0.987776&0.988089&0.988396&0.988696&0.988989 \\
+2.3& 0.989276&0.989556&0.989830&0.990097&0.990358&0.990613&0.990863&0.991106&0.991344&0.991576 \\
+2.4& 0.991802&0.992024&0.992240&0.992451&0.992656&0.992857&0.993053&0.993244&0.993431&0.993613 \\
+2.5& 0.993790&0.993963&0.994132&0.994297&0.994457&0.994614&0.994766&0.994915&0.995060&0.995201 \\
+2.6& 0.995339&0.995473&0.995604&0.995731&0.995855&0.995975&0.996093&0.996207&0.996319&0.996427 \\
+2.7& 0.996533&0.996636&0.996736&0.996833&0.996928&0.997020&0.997110&0.997197&0.997282&0.997365 \\
+2.8& 0.997445&0.997523&0.997599&0.997673&0.997744&0.997814&0.997882&0.997948&0.998012&0.998074 \\
+2.9& 0.998134&0.998193&0.998250&0.998305&0.998359&0.998411&0.998462&0.998511&0.998559&0.998605 \\
+3.0& 0.998650&0.998694&0.998736&0.998777&0.998817&0.998856&0.998893&0.998930&0.998965&0.998999 \\
+3.1& 0.999032&0.999065&0.999096&0.999126&0.999155&0.999184&0.999211&0.999238&0.999264&0.999289 \\
+3.2& 0.999313&0.999336&0.999359&0.999381&0.999402&0.999423&0.999443&0.999462&0.999481&0.999499 \\
+3.3& 0.999517&0.999534&0.999550&0.999566&0.999581&0.999596&0.999610&0.999624&0.999638&0.999651 \\
+3.4& 0.999663&0.999675&0.999687&0.999698&0.999709&0.999720&0.999730&0.999740&0.999749&0.999758 \\
+3.5& 0.999767&0.999776&0.999784&0.999792&0.999800&0.999807&0.999815&0.999822&0.999828&0.999835 \\
+3.6& 0.999841&0.999847&0.999853&0.999858&0.999864&0.999869&0.999874&0.999879&0.999883&0.999888 \\
+3.7& 0.999892&0.999896&0.999900&0.999904&0.999908&0.999912&0.999915&0.999918&0.999922&0.999925 \\
+3.8& 0.999928&0.999931&0.999933&0.999936&0.999938&0.999941&0.999943&0.999946&0.999948&0.999950 \\
+3.9& 0.999952&0.999954&0.999956&0.999958&0.999959&0.999961&0.999963&0.999964&0.999966&0.999967 \\
+4.0& 0.999968&0.999970&0.999971&0.999972&0.999973&0.999974&0.999975&0.999976&0.999977&0.999978 \\
+4.1& 0.999979&0.999980&0.999981&0.999982&0.999983&0.999983&0.999984&0.999985&0.999985&0.999986 \\
+4.2& 0.999987&0.999987&0.999988&0.999988&0.999989&0.999989&0.999990&0.999990&0.999991&0.999991 \\
+4.3& 0.999991&0.999992&0.999992&0.999993&0.999993&0.999993&0.999993&0.999994&0.999994&0.999994 \\
+4.4& 0.999995&0.999995&0.999995&0.999995&0.999996&0.999996&0.999996&0.999996&0.999996&0.999996 \\
+4.5& 0.999997&0.999997&0.999997&0.999997&0.999997&0.999997&0.999997&0.999998&0.999998&0.999998 \\
+4.6& 0.999998&0.999998&0.999998&0.999998&0.999998&0.999998&0.999998&0.999998&0.999999&0.999999 \\
+4.7& 0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999 \\
+4.8& 0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999&0.999999 \\
+4.9& 1.000000&1.000000&1.000000&1.000000&1.000000&1.000000&1.000000&1.000000&1.000000&1.000000
+\end{tabular}
+\end{center}
+
+\subsection{Разложение чисел на простые}
+\footnotesize
+\begin{longtable}{llllll}
+$ 1 = 1$ & $2 = 2$ & $3 = 3$ & $4 = 2^2$ & $5 = 5$ & $6 = 2 \cdot 3$ \\
+$7 = 7$ & $8 = 2^3$ & $9 = 3^2$ & $10 = 2 \cdot 5$ & $11 = 11$ & $12 = 2^2 \cdot 3$ \\
+$13 = 13$ & $14 = 2 \cdot 7$ & $15 = 3 \cdot 5$ & $16 = 2^4$ & $17 = 17$ & $18 = 2 \cdot 3^2$ \\
+$19 = 19$ & $20 = 2^2 \cdot 5$ & $21 = 3 \cdot 7$ & $22 = 2 \cdot 11$ & $23 = 23$ & $24 = 2^3 \cdot 3$ \\
+$25 = 5^2$ & $26 = 2 \cdot 13$ & $27 = 3^3$ & $28 = 2^2 \cdot 7$ & $29 = 29$ & $30 = 2 \cdot 3 \cdot 5$ \\
+$31 = 31$ & $32 = 2^5$ & $33 = 3 \cdot 11$ & $34 = 2 \cdot 17$ & $35 = 5 \cdot 7$ & $36 = 2^2 \cdot 3^2$ \\
+$37 = 37$ & $38 = 2 \cdot 19$ & $39 = 3 \cdot 13$ & $40 = 2^3 \cdot 5$ & $41 = 41$ & $42 = 2 \cdot 3 \cdot 7$ \\
+$43 = 43$ & $44 = 2^2 \cdot 11$ & $45 = 3^2 \cdot 5$ & $46 = 2 \cdot 23$ & $47 = 47$ & $48 = 2^4 \cdot 3$ \\
+$49 = 7^2$ & $50 = 2 \cdot 5^2$ & $51 = 3 \cdot 17$ & $52 = 2^2 \cdot 13$ & $53 = 53$ & $54 = 2 \cdot 3^3$ \\
+$55 = 5 \cdot 11$ & $56 = 2^3 \cdot 7$ & $57 = 3 \cdot 19$ & $58 = 2 \cdot 29$ & $59 = 59$ & $60 = 2^2 \cdot 3 \cdot 5$ \\
+$61 = 61$ & $62 = 2 \cdot 31$ & $63 = 3^2 \cdot 7$ & $64 = 2^6$ & $65 = 5 \cdot 13$ & $66 = 2 \cdot 3 \cdot 11$ \\
+$67 = 67$ & $68 = 2^2 \cdot 17$ & $69 = 3 \cdot 23$ & $70 = 2 \cdot 5 \cdot 7$ & $71 = 71$ & $72 = 2^3 \cdot 3^2$ \\
+$73 = 73$ & $74 = 2 \cdot 37$ & $75 = 3 \cdot 5^2$ & $76 = 2^2 \cdot 19$ & $77 = 7 \cdot 11$ & $78 = 2 \cdot 3 \cdot 13$ \\
+$79 = 79$ & $80 = 2^4 \cdot 5$ & $81 = 3^4$ & $82 = 2 \cdot 41$ & $83 = 83$ & $84 = 2^2 \cdot 3 \cdot 7$ \\
+$85 = 5 \cdot 17$ & $86 = 2 \cdot 43$ & $87 = 3 \cdot 29$ & $88 = 2^3 \cdot 11$ & $89 = 89$ & $90 = 2 \cdot 3^2 \cdot 5$ \\
+$91 = 7 \cdot 13$ & $92 = 2^2 \cdot 23$ & $93 = 3 \cdot 31$ & $94 = 2 \cdot 47$ & $95 = 5 \cdot 19$ & $96 = 2^5 \cdot 3$ \\
+$97 = 97$ & $98 = 2 \cdot 7^2$ & $99 = 3^2 \cdot 11$ & $100 = 2^2 \cdot 5^2$ & $101 = 101$ & $102 = 2 \cdot 3 \cdot 17$ \\
+$103 = 103$ & $104 = 2^3 \cdot 13$ & $105 = 3 \cdot 5 \cdot 7$ & $106 = 2 \cdot 53$ & $107 = 107$ & $108 = 2^2 \cdot 3^3$ \\
+$109 = 109$ & $110 = 2 \cdot 5 \cdot 11$ & $111 = 3 \cdot 37$ & $112 = 2^4 \cdot 7$ & $113 = 113$ & $114 = 2 \cdot 3 \cdot 19$ \\
+$115 = 5 \cdot 23$ & $116 = 2^2 \cdot 29$ & $117 = 3^2 \cdot 13$ & $118 = 2 \cdot 59$ & $119 = 7 \cdot 17$ & $120 = 2^3 \cdot 3 \cdot 5$ \\
+$121 = 11^2$ & $122 = 2 \cdot 61$ & $123 = 3 \cdot 41$ & $124 = 2^2 \cdot 31$ & $125 = 5^3$ & $126 = 2 \cdot 3^2 \cdot 7$ \\
+$127 = 127$ & $128 = 2^7$ & $129 = 3 \cdot 43$ & $130 = 2 \cdot 5 \cdot 13$ & $131 = 131$ & $132 = 2^2 \cdot 3 \cdot 11$ \\
+$133 = 7 \cdot 19$ & $134 = 2 \cdot 67$ & $135 = 3^3 \cdot 5$ & $136 = 2^3 \cdot 17$ & $137 = 137$ & $138 = 2 \cdot 3 \cdot 23$ \\
+$139 = 139$ & $140 = 2^2 \cdot 5 \cdot 7$ & $141 = 3 \cdot 47$ & $142 = 2 \cdot 71$ & $143 = 11 \cdot 13$ & $144 = 2^4 \cdot 3^2$ \\
+$145 = 5 \cdot 29$ & $146 = 2 \cdot 73$ & $147 = 3 \cdot 7^2$ & $148 = 2^2 \cdot 37$ & $149 = 149$ & $150 = 2 \cdot 3 \cdot 5^2$ \\
+$151 = 151$ & $152 = 2^3 \cdot 19$ & $153 = 3^2 \cdot 17$ & $154 = 2 \cdot 7 \cdot 11$ & $155 = 5 \cdot 31$ & $156 = 2^2 \cdot 3 \cdot 13$ \\
+$157 = 157$ & $158 = 2 \cdot 79$ & $159 = 3 \cdot 53$ & $160 = 2^5 \cdot 5$ & $161 = 7 \cdot 23$ & $162 = 2 \cdot 3^4$ \\
+$163 = 163$ & $164 = 2^2 \cdot 41$ & $165 = 3 \cdot 5 \cdot 11$ & $166 = 2 \cdot 83$ & $167 = 167$ & $168 = 2^3 \cdot 3 \cdot 7$ \\
+$169 = 13^2$ & $170 = 2 \cdot 5 \cdot 17$ & $171 = 3^2 \cdot 19$ & $172 = 2^2 \cdot 43$ & $173 = 173$ & $174 = 2 \cdot 3 \cdot 29$ \\
+$175 = 5^2 \cdot 7$ & $176 = 2^4 \cdot 11$ & $177 = 3 \cdot 59$ & $178 = 2 \cdot 89$ & $179 = 179$ & $180 = 2^2 \cdot 3^2 \cdot 5$ \\
+$181 = 181$ & $182 = 2 \cdot 7 \cdot 13$ & $183 = 3 \cdot 61$ & $184 = 2^3 \cdot 23$ & $185 = 5 \cdot 37$ & $186 = 2 \cdot 3 \cdot 31$ \\
+$187 = 11 \cdot 17$ & $188 = 2^2 \cdot 47$ & $189 = 3^3 \cdot 7$ & $190 = 2 \cdot 5 \cdot 19$ & $191 = 191$ & $192 = 2^6 \cdot 3$ \\
+$193 = 193$ & $194 = 2 \cdot 97$ & $195 = 3 \cdot 5 \cdot 13$ & $196 = 2^2 \cdot 7^2$ & $197 = 197$ & $198 = 2 \cdot 3^2 \cdot 11$ \\
+$199 = 199$ & $200 = 2^3 \cdot 5^2$ & $201 = 3 \cdot 67$ & $202 = 2 \cdot 101$ & $203 = 7 \cdot 29$ & $204 = 2^2 \cdot 3 \cdot 17$ \\
+$205 = 5 \cdot 41$ & $206 = 2 \cdot 103$ & $207 = 3^2 \cdot 23$ & $208 = 2^4 \cdot 13$ & $209 = 11 \cdot 19$ & $210 = 2 \cdot 3 \cdot 5 \cdot 7$ \\
+$211 = 211$ & $212 = 2^2 \cdot 53$ & $213 = 3 \cdot 71$ & $214 = 2 \cdot 107$ & $215 = 5 \cdot 43$ & $216 = 2^3 \cdot 3^3$ \\
+$217 = 7 \cdot 31$ & $218 = 2 \cdot 109$ & $219 = 3 \cdot 73$ & $220 = 2^2 \cdot 5 \cdot 11$ & $221 = 13 \cdot 17$ & $222 = 2 \cdot 3 \cdot 37$ \\
+$223 = 223$ & $224 = 2^5 \cdot 7$ & $225 = 3^2 \cdot 5^2$ & $226 = 2 \cdot 113$ & $227 = 227$ & $228 = 2^2 \cdot 3 \cdot 19$ \\
+$229 = 229$ & $230 = 2 \cdot 5 \cdot 23$ & $231 = 3 \cdot 7 \cdot 11$ & $232 = 2^3 \cdot 29$ & $233 = 233$ & $234 = 2 \cdot 3^2 \cdot 13$ \\
+$235 = 5 \cdot 47$ & $236 = 2^2 \cdot 59$ & $237 = 3 \cdot 79$ & $238 = 2 \cdot 7 \cdot 17$ & $239 = 239$ & $240 = 2^4 \cdot 3 \cdot 5$ \\
+$241 = 241$ & $242 = 2 \cdot 11^2$ & $243 = 3^5$ & $244 = 2^2 \cdot 61$ & $245 = 5 \cdot 7^2$ & $246 = 2 \cdot 3 \cdot 41$ \\
+$247 = 13 \cdot 19$ & $248 = 2^3 \cdot 31$ & $249 = 3 \cdot 83$ & $250 = 2 \cdot 5^3$ & $251 = 251$ & $252 = 2^2 \cdot 3^2 \cdot 7$ \\
+$253 = 11 \cdot 23$ & $254 = 2 \cdot 127$ & $255 = 3 \cdot 5 \cdot 17$ & $256 = 2^8$ & $257 = 257$ & $258 = 2 \cdot 3 \cdot 43$ \\
+$259 = 7 \cdot 37$ & $260 = 2^2 \cdot 5 \cdot 13$ & $261 = 3^2 \cdot 29$ & $262 = 2 \cdot 131$ & $263 = 263$ & $264 = 2^3 \cdot 3 \cdot 11$ \\
+$265 = 5 \cdot 53$ & $266 = 2 \cdot 7 \cdot 19$ & $267 = 3 \cdot 89$ & $268 = 2^2 \cdot 67$ & $269 = 269$ & $270 = 2 \cdot 3^3 \cdot 5$ \\
+$271 = 271$ & $272 = 2^4 \cdot 17$ & $273 = 3 \cdot 7 \cdot 13$ & $274 = 2 \cdot 137$ & $275 = 5^2 \cdot 11$ & $276 = 2^2 \cdot 3 \cdot 23$ \\
+$277 = 277$ & $278 = 2 \cdot 139$ & $279 = 3^2 \cdot 31$ & $280 = 2^3 \cdot 5 \cdot 7$ & $281 = 281$ & $282 = 2 \cdot 3 \cdot 47$ \\
+$283 = 283$ & $284 = 2^2 \cdot 71$ & $285 = 3 \cdot 5 \cdot 19$ & $286 = 2 \cdot 11 \cdot 13$ & $287 = 7 \cdot 41$ & $288 = 2^5 \cdot 3^2$ \\
+$289 = 17^2$ & $290 = 2 \cdot 5 \cdot 29$ & $291 = 3 \cdot 97$ & $292 = 2^2 \cdot 73$ & $293 = 293$ & $294 = 2 \cdot 3 \cdot 7^2$ \\
+$295 = 5 \cdot 59$ & $296 = 2^3 \cdot 37$ & $297 = 3^3 \cdot 11$ & $298 = 2 \cdot 149$ & $299 = 13 \cdot 23$ & $300 = 2^2 \cdot 3 \cdot 5^2$ \\
+$301 = 7 \cdot 43$ & $302 = 2 \cdot 151$ & $303 = 3 \cdot 101$ & $304 = 2^4 \cdot 19$ & $305 = 5 \cdot 61$ & $306 = 2 \cdot 3^2 \cdot 17$ \\
+$307 = 307$ & $308 = 2^2 \cdot 7 \cdot 11$ & $309 = 3 \cdot 103$ & $310 = 2 \cdot 5 \cdot 31$ & $311 = 311$ & $312 = 2^3 \cdot 3 \cdot 13$ \\
+$313 = 313$ & $314 = 2 \cdot 157$ & $315 = 3^2 \cdot 5 \cdot 7$ & $316 = 2^2 \cdot 79$ & $317 = 317$ & $318 = 2 \cdot 3 \cdot 53$ \\
+$319 = 11 \cdot 29$ & $320 = 2^6 \cdot 5$ & $321 = 3 \cdot 107$ & $322 = 2 \cdot 7 \cdot 23$ & $323 = 17 \cdot 19$ & $324 = 2^2 \cdot 3^4$ \\
+$325 = 5^2 \cdot 13$ & $326 = 2 \cdot 163$ & $327 = 3 \cdot 109$ & $328 = 2^3 \cdot 41$ & $329 = 7 \cdot 47$ & $330 = 2 \cdot 3 \cdot 5 \cdot 11$ \\
+$331 = 331$ & $332 = 2^2 \cdot 83$ & $333 = 3^2 \cdot 37$ & $334 = 2 \cdot 167$ & $335 = 5 \cdot 67$ & $336 = 2^4 \cdot 3 \cdot 7$ \\
+$337 = 337$ & $338 = 2 \cdot 13^2$ & $339 = 3 \cdot 113$ & $340 = 2^2 \cdot 5 \cdot 17$ & $341 = 11 \cdot 31$ & $342 = 2 \cdot 3^2 \cdot 19$ \\
+$343 = 7^3$ & $344 = 2^3 \cdot 43$ & $345 = 3 \cdot 5 \cdot 23$ & $346 = 2 \cdot 173$ & $347 = 347$ & $348 = 2^2 \cdot 3 \cdot 29$ \\
+$349 = 349$ & $350 = 2 \cdot 5^2 \cdot 7$ & $351 = 3^3 \cdot 13$ & $352 = 2^5 \cdot 11$ & $353 = 353$ & $354 = 2 \cdot 3 \cdot 59$ \\
+$355 = 5 \cdot 71$ & $356 = 2^2 \cdot 89$ & $357 = 3 \cdot 7 \cdot 17$ & $358 = 2 \cdot 179$ & $359 = 359$ & $360 = 2^3 \cdot 3^2 \cdot 5$ \\
+$361 = 19^2$ & $362 = 2 \cdot 181$ & $363 = 3 \cdot 11^2$ & $364 = 2^2 \cdot 7 \cdot 13$ & $365 = 5 \cdot 73$ & $366 = 2 \cdot 3 \cdot 61$ \\
+$367 = 367$ & $368 = 2^4 \cdot 23$ & $369 = 3^2 \cdot 41$ & $370 = 2 \cdot 5 \cdot 37$ & $371 = 7 \cdot 53$ & $372 = 2^2 \cdot 3 \cdot 31$ \\
+$373 = 373$ & $374 = 2 \cdot 11 \cdot 17$ & $375 = 3 \cdot 5^3$ & $376 = 2^3 \cdot 47$ & $377 = 13 \cdot 29$ & $378 = 2 \cdot 3^3 \cdot 7$ \\
+$379 = 379$ & $380 = 2^2 \cdot 5 \cdot 19$ & $381 = 3 \cdot 127$ & $382 = 2 \cdot 191$ & $383 = 383$ & $384 = 2^7 \cdot 3$ \\
+$385 = 5 \cdot 7 \cdot 11$ & $386 = 2 \cdot 193$ & $387 = 3^2 \cdot 43$ & $388 = 2^2 \cdot 97$ & $389 = 389$ & $390 = 2 \cdot 3 \cdot 5 \cdot 13$ \\
+$391 = 17 \cdot 23$ & $392 = 2^3 \cdot 7^2$ & $393 = 3 \cdot 131$ & $394 = 2 \cdot 197$ & $395 = 5 \cdot 79$ & $396 = 2^2 \cdot 3^2 \cdot 11$ \\
+$397 = 397$ & $398 = 2 \cdot 199$ & $399 = 3 \cdot 7 \cdot 19$ & $400 = 2^4 \cdot 5^2$ & $401 = 401$ & $402 = 2 \cdot 3 \cdot 67$ \\
+$403 = 13 \cdot 31$ & $404 = 2^2 \cdot 101$ & $405 = 3^4 \cdot 5$ & $406 = 2 \cdot 7 \cdot 29$ & $407 = 11 \cdot 37$ & $408 = 2^3 \cdot 3 \cdot 17$ \\
+$409 = 409$ & $410 = 2 \cdot 5 \cdot 41$ & $411 = 3 \cdot 137$ & $412 = 2^2 \cdot 103$ & $413 = 7 \cdot 59$ & $414 = 2 \cdot 3^2 \cdot 23$ \\
+$415 = 5 \cdot 83$ & $416 = 2^5 \cdot 13$ & $417 = 3 \cdot 139$ & $418 = 2 \cdot 11 \cdot 19$ & $419 = 419$ & $420 = 2^2 \cdot 3 \cdot 5 \cdot 7$ \\
+$421 = 421$ & $422 = 2 \cdot 211$ & $423 = 3^2 \cdot 47$ & $424 = 2^3 \cdot 53$ & $425 = 5^2 \cdot 17$ & $426 = 2 \cdot 3 \cdot 71$ \\
+$427 = 7 \cdot 61$ & $428 = 2^2 \cdot 107$ & $429 = 3 \cdot 11 \cdot 13$ & $430 = 2 \cdot 5 \cdot 43$ & $431 = 431$ & $432 = 2^4 \cdot 3^3$ \\
+$433 = 433$ & $434 = 2 \cdot 7 \cdot 31$ & $435 = 3 \cdot 5 \cdot 29$ & $436 = 2^2 \cdot 109$ & $437 = 19 \cdot 23$ & $438 = 2 \cdot 3 \cdot 73$ \\
+$439 = 439$ & $440 = 2^3 \cdot 5 \cdot 11$ & $441 = 3^2 \cdot 7^2$ & $442 = 2 \cdot 13 \cdot 17$ & $443 = 443$ & $444 = 2^2 \cdot 3 \cdot 37$ \\
+$445 = 5 \cdot 89$ & $446 = 2 \cdot 223$ & $447 = 3 \cdot 149$ & $448 = 2^6 \cdot 7$ & $449 = 449$ & $450 = 2 \cdot 3^2 \cdot 5^2$ \\
+$451 = 11 \cdot 41$ & $452 = 2^2 \cdot 113$ & $453 = 3 \cdot 151$ & $454 = 2 \cdot 227$ & $455 = 5 \cdot 7 \cdot 13$ & $456 = 2^3 \cdot 3 \cdot 19$ \\
+$457 = 457$ & $458 = 2 \cdot 229$ & $459 = 3^3 \cdot 17$ & $460 = 2^2 \cdot 5 \cdot 23$ & $461 = 461$ & $462 = 2 \cdot 3 \cdot 7 \cdot 11$ \\
+$463 = 463$ & $464 = 2^4 \cdot 29$ & $465 = 3 \cdot 5 \cdot 31$ & $466 = 2 \cdot 233$ & $467 = 467$ & $468 = 2^2 \cdot 3^2 \cdot 13$ \\
+$469 = 7 \cdot 67$ & $470 = 2 \cdot 5 \cdot 47$ & $471 = 3 \cdot 157$ & $472 = 2^3 \cdot 59$ & $473 = 11 \cdot 43$ & $474 = 2 \cdot 3 \cdot 79$ \\
+$475 = 5^2 \cdot 19$ & $476 = 2^2 \cdot 7 \cdot 17$ & $477 = 3^2 \cdot 53$ & $478 = 2 \cdot 239$ & $479 = 479$ & $480 = 2^5 \cdot 3 \cdot 5$ \\
+$481 = 13 \cdot 37$ & $482 = 2 \cdot 241$ & $483 = 3 \cdot 7 \cdot 23$ & $484 = 2^2 \cdot 11^2$ & $485 = 5 \cdot 97$ & $486 = 2 \cdot 3^5$ \\
+$487 = 487$ & $488 = 2^3 \cdot 61$ & $489 = 3 \cdot 163$ & $490 = 2 \cdot 5 \cdot 7^2$ & $491 = 491$ & $492 = 2^2 \cdot 3 \cdot 41$ \\
+$493 = 17 \cdot 29$ & $494 = 2 \cdot 13 \cdot 19$ & $495 = 3^2 \cdot 5 \cdot 11$ & $496 = 2^4 \cdot 31$ & $497 = 7 \cdot 71$ & $498 = 2 \cdot 3 \cdot 83$ \\
+$499 = 499$ & $500 = 2^2 \cdot 5^3$ & $501 = 3 \cdot 167$ & $502 = 2 \cdot 251$ & $503 = 503$ & $504 = 2^3 \cdot 3^2 \cdot 7$ \\
+$505 = 5 \cdot 101$ & $506 = 2 \cdot 11 \cdot 23$ & $507 = 3 \cdot 13^2$ & $508 = 2^2 \cdot 127$ & $509 = 509$ & $510 = 2 \cdot 3 \cdot 5 \cdot 17$ \\
+$511 = 7 \cdot 73$ & $512 = 2^9$ & $513 = 3^3 \cdot 19$ & $514 = 2 \cdot 257$ & $515 = 5 \cdot 103$ & $516 = 2^2 \cdot 3 \cdot 43$ \\
+$517 = 11 \cdot 47$ & $518 = 2 \cdot 7 \cdot 37$ & $519 = 3 \cdot 173$ & $520 = 2^3 \cdot 5 \cdot 13$ & $521 = 521$ & $522 = 2 \cdot 3^2 \cdot 29$ \\
+$523 = 523$ & $524 = 2^2 \cdot 131$ & $525 = 3 \cdot 5^2 \cdot 7$ & $526 = 2 \cdot 263$ & $527 = 17 \cdot 31$ & $528 = 2^4 \cdot 3 \cdot 11$ \\
+$529 = 23^2$ & $530 = 2 \cdot 5 \cdot 53$ & $531 = 3^2 \cdot 59$ & $532 = 2^2 \cdot 7 \cdot 19$ & $533 = 13 \cdot 41$ & $534 = 2 \cdot 3 \cdot 89$ \\
+$535 = 5 \cdot 107$ & $536 = 2^3 \cdot 67$ & $537 = 3 \cdot 179$ & $538 = 2 \cdot 269$ & $539 = 7^2 \cdot 11$ & $540 = 2^2 \cdot 3^3 \cdot 5$ \\
+$541 = 541$ & $542 = 2 \cdot 271$ & $543 = 3 \cdot 181$ & $544 = 2^5 \cdot 17$ & $545 = 5 \cdot 109$ & $546 = 2 \cdot 3 \cdot 7 \cdot 13$ \\
+$547 = 547$ & $548 = 2^2 \cdot 137$ & $549 = 3^2 \cdot 61$ & $550 = 2 \cdot 5^2 \cdot 11$ & $551 = 19 \cdot 29$ & $552 = 2^3 \cdot 3 \cdot 23$ \\
+$553 = 7 \cdot 79$ & $554 = 2 \cdot 277$ & $555 = 3 \cdot 5 \cdot 37$ & $556 = 2^2 \cdot 139$ & $557 = 557$ & $558 = 2 \cdot 3^2 \cdot 31$ \\
+$559 = 13 \cdot 43$ & $560 = 2^4 \cdot 5 \cdot 7$ & $561 = 3 \cdot 11 \cdot 17$ & $562 = 2 \cdot 281$ & $563 = 563$ & $564 = 2^2 \cdot 3 \cdot 47$ \\
+$565 = 5 \cdot 113$ & $566 = 2 \cdot 283$ & $567 = 3^4 \cdot 7$ & $568 = 2^3 \cdot 71$ & $569 = 569$ & $570 = 2 \cdot 3 \cdot 5 \cdot 19$ \\
+$571 = 571$ & $572 = 2^2 \cdot 11 \cdot 13$ & $573 = 3 \cdot 191$ & $574 = 2 \cdot 7 \cdot 41$ & $575 = 5^2 \cdot 23$ & $576 = 2^6 \cdot 3^2$ \\
+$577 = 577$ & $578 = 2 \cdot 17^2$ & $579 = 3 \cdot 193$ & $580 = 2^2 \cdot 5 \cdot 29$ & $581 = 7 \cdot 83$ & $582 = 2 \cdot 3 \cdot 97$ \\
+$583 = 11 \cdot 53$ & $584 = 2^3 \cdot 73$ & $585 = 3^2 \cdot 5 \cdot 13$ & $586 = 2 \cdot 293$ & $587 = 587$ & $588 = 2^2 \cdot 3 \cdot 7^2$ \\
+$589 = 19 \cdot 31$ & $590 = 2 \cdot 5 \cdot 59$ & $591 = 3 \cdot 197$ & $592 = 2^4 \cdot 37$ & $593 = 593$ & $594 = 2 \cdot 3^3 \cdot 11$ \\
+$595 = 5 \cdot 7 \cdot 17$ & $596 = 2^2 \cdot 149$ & $597 = 3 \cdot 199$ & $598 = 2 \cdot 13 \cdot 23$ & $599 = 599$ & $600 = 2^3 \cdot 3 \cdot 5^2$ \\
+$601 = 601$ & $602 = 2 \cdot 7 \cdot 43$ & $603 = 3^2 \cdot 67$ & $604 = 2^2 \cdot 151$ & $605 = 5 \cdot 11^2$ & $606 = 2 \cdot 3 \cdot 101$ \\
+$607 = 607$ & $608 = 2^5 \cdot 19$ & $609 = 3 \cdot 7 \cdot 29$ & $610 = 2 \cdot 5 \cdot 61$ & $611 = 13 \cdot 47$ & $612 = 2^2 \cdot 3^2 \cdot 17$ \\
+$613 = 613$ & $614 = 2 \cdot 307$ & $615 = 3 \cdot 5 \cdot 41$ & $616 = 2^3 \cdot 7 \cdot 11$ & $617 = 617$ & $618 = 2 \cdot 3 \cdot 103$ \\
+$619 = 619$ & $620 = 2^2 \cdot 5 \cdot 31$ & $621 = 3^3 \cdot 23$ & $622 = 2 \cdot 311$ & $623 = 7 \cdot 89$ & $624 = 2^4 \cdot 3 \cdot 13$ \\
+$625 = 5^4$ & $626 = 2 \cdot 313$ & $627 = 3 \cdot 11 \cdot 19$ & $628 = 2^2 \cdot 157$ & $629 = 17 \cdot 37$ & $630 = 2 \cdot 3^2 \cdot 5 \cdot 7$ \\
+$631 = 631$ & $632 = 2^3 \cdot 79$ & $633 = 3 \cdot 211$ & $634 = 2 \cdot 317$ & $635 = 5 \cdot 127$ & $636 = 2^2 \cdot 3 \cdot 53$ \\
+$637 = 7^2 \cdot 13$ & $638 = 2 \cdot 11 \cdot 29$ & $639 = 3^2 \cdot 71$ & $640 = 2^7 \cdot 5$ & $641 = 641$ & $642 = 2 \cdot 3 \cdot 107$ \\
+$643 = 643$ & $644 = 2^2 \cdot 7 \cdot 23$ & $645 = 3 \cdot 5 \cdot 43$ & $646 = 2 \cdot 17 \cdot 19$ & $647 = 647$ & $648 = 2^3 \cdot 3^4$ \\
+$649 = 11 \cdot 59$ & $650 = 2 \cdot 5^2 \cdot 13$ & $651 = 3 \cdot 7 \cdot 31$ & $652 = 2^2 \cdot 163$ & $653 = 653$ & $654 = 2 \cdot 3 \cdot 109$ \\
+$655 = 5 \cdot 131$ & $656 = 2^4 \cdot 41$ & $657 = 3^2 \cdot 73$ & $658 = 2 \cdot 7 \cdot 47$ & $659 = 659$ & $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$ \\
+$661 = 661$ & $662 = 2 \cdot 331$ & $663 = 3 \cdot 13 \cdot 17$ & $664 = 2^3 \cdot 83$ & $665 = 5 \cdot 7 \cdot 19$ & $666 = 2 \cdot 3^2 \cdot 37$ \\
+$667 = 23 \cdot 29$ & $668 = 2^2 \cdot 167$ & $669 = 3 \cdot 223$ & $670 = 2 \cdot 5 \cdot 67$ & $671 = 11 \cdot 61$ & $672 = 2^5 \cdot 3 \cdot 7$ \\
+$673 = 673$ & $674 = 2 \cdot 337$ & $675 = 3^3 \cdot 5^2$ & $676 = 2^2 \cdot 13^2$ & $677 = 677$ & $678 = 2 \cdot 3 \cdot 113$ \\
+$679 = 7 \cdot 97$ & $680 = 2^3 \cdot 5 \cdot 17$ & $681 = 3 \cdot 227$ & $682 = 2 \cdot 11 \cdot 31$ & $683 = 683$ & $684 = 2^2 \cdot 3^2 \cdot 19$ \\
+$685 = 5 \cdot 137$ & $686 = 2 \cdot 7^3$ & $687 = 3 \cdot 229$ & $688 = 2^4 \cdot 43$ & $689 = 13 \cdot 53$ & $690 = 2 \cdot 3 \cdot 5 \cdot 23$ \\
+$691 = 691$ & $692 = 2^2 \cdot 173$ & $693 = 3^2 \cdot 7 \cdot 11$ & $694 = 2 \cdot 347$ & $695 = 5 \cdot 139$ & $696 = 2^3 \cdot 3 \cdot 29$ \\
+$697 = 17 \cdot 41$ & $698 = 2 \cdot 349$ & $699 = 3 \cdot 233$ & $700 = 2^2 \cdot 5^2 \cdot 7$ & $701 = 701$ & $702 = 2 \cdot 3^3 \cdot 13$ \\
+$703 = 19 \cdot 37$ & $704 = 2^6 \cdot 11$ & $705 = 3 \cdot 5 \cdot 47$ & $706 = 2 \cdot 353$ & $707 = 7 \cdot 101$ & $708 = 2^2 \cdot 3 \cdot 59$ \\
+$709 = 709$ & $710 = 2 \cdot 5 \cdot 71$ & $711 = 3^2 \cdot 79$ & $712 = 2^3 \cdot 89$ & $713 = 23 \cdot 31$ & $714 = 2 \cdot 3 \cdot 7 \cdot 17$ \\
+$715 = 5 \cdot 11 \cdot 13$ & $716 = 2^2 \cdot 179$ & $717 = 3 \cdot 239$ & $718 = 2 \cdot 359$ & $719 = 719$ & $720 = 2^4 \cdot 3^2 \cdot 5$ \\
+$721 = 7 \cdot 103$ & $722 = 2 \cdot 19^2$ & $723 = 3 \cdot 241$ & $724 = 2^2 \cdot 181$ & $725 = 5^2 \cdot 29$ & $726 = 2 \cdot 3 \cdot 11^2$ \\
+$727 = 727$ & $728 = 2^3 \cdot 7 \cdot 13$ & $729 = 3^6$ & $730 = 2 \cdot 5 \cdot 73$ & $731 = 17 \cdot 43$ & $732 = 2^2 \cdot 3 \cdot 61$ \\
+$733 = 733$ & $734 = 2 \cdot 367$ & $735 = 3 \cdot 5 \cdot 7^2$ & $736 = 2^5 \cdot 23$ & $737 = 11 \cdot 67$ & $738 = 2 \cdot 3^2 \cdot 41$ \\
+$739 = 739$ & $740 = 2^2 \cdot 5 \cdot 37$ & $741 = 3 \cdot 13 \cdot 19$ & $742 = 2 \cdot 7 \cdot 53$ & $743 = 743$ & $744 = 2^3 \cdot 3 \cdot 31$ \\
+$745 = 5 \cdot 149$ & $746 = 2 \cdot 373$ & $747 = 3^2 \cdot 83$ & $748 = 2^2 \cdot 11 \cdot 17$ & $749 = 7 \cdot 107$ & $750 = 2 \cdot 3 \cdot 5^3$ \\
+$751 = 751$ & $752 = 2^4 \cdot 47$ & $753 = 3 \cdot 251$ & $754 = 2 \cdot 13 \cdot 29$ & $755 = 5 \cdot 151$ & $756 = 2^2 \cdot 3^3 \cdot 7$ \\
+$757 = 757$ & $758 = 2 \cdot 379$ & $759 = 3 \cdot 11 \cdot 23$ & $760 = 2^3 \cdot 5 \cdot 19$ & $761 = 761$ & $762 = 2 \cdot 3 \cdot 127$ \\
+$763 = 7 \cdot 109$ & $764 = 2^2 \cdot 191$ & $765 = 3^2 \cdot 5 \cdot 17$ & $766 = 2 \cdot 383$ & $767 = 13 \cdot 59$ & $768 = 2^8 \cdot 3$ \\
+$769 = 769$ & $770 = 2 \cdot 5 \cdot 7 \cdot 11$ & $771 = 3 \cdot 257$ & $772 = 2^2 \cdot 193$ & $773 = 773$ & $774 = 2 \cdot 3^2 \cdot 43$ \\
+$775 = 5^2 \cdot 31$ & $776 = 2^3 \cdot 97$ & $777 = 3 \cdot 7 \cdot 37$ & $778 = 2 \cdot 389$ & $779 = 19 \cdot 41$ & $780 = 2^2 \cdot 3 \cdot 5 \cdot 13$ \\
+$781 = 11 \cdot 71$ & $782 = 2 \cdot 17 \cdot 23$ & $783 = 3^3 \cdot 29$ & $784 = 2^4 \cdot 7^2$ & $785 = 5 \cdot 157$ & $786 = 2 \cdot 3 \cdot 131$ \\
+$787 = 787$ & $788 = 2^2 \cdot 197$ & $789 = 3 \cdot 263$ & $790 = 2 \cdot 5 \cdot 79$ & $791 = 7 \cdot 113$ & $792 = 2^3 \cdot 3^2 \cdot 11$ \\
+$793 = 13 \cdot 61$ & $794 = 2 \cdot 397$ & $795 = 3 \cdot 5 \cdot 53$ & $796 = 2^2 \cdot 199$ & $797 = 797$ & $798 = 2 \cdot 3 \cdot 7 \cdot 19$ \\
+$799 = 17 \cdot 47$ & $800 = 2^5 \cdot 5^2$ & $801 = 3^2 \cdot 89$ & $802 = 2 \cdot 401$ & $803 = 11 \cdot 73$ & $804 = 2^2 \cdot 3 \cdot 67$ \\
+$805 = 5 \cdot 7 \cdot 23$ & $806 = 2 \cdot 13 \cdot 31$ & $807 = 3 \cdot 269$ & $808 = 2^3 \cdot 101$ & $809 = 809$ & $810 = 2 \cdot 3^4 \cdot 5$ \\
+$811 = 811$ & $812 = 2^2 \cdot 7 \cdot 29$ & $813 = 3 \cdot 271$ & $814 = 2 \cdot 11 \cdot 37$ & $815 = 5 \cdot 163$ & $816 = 2^4 \cdot 3 \cdot 17$ \\
+$817 = 19 \cdot 43$ & $818 = 2 \cdot 409$ & $819 = 3^2 \cdot 7 \cdot 13$ & $820 = 2^2 \cdot 5 \cdot 41$ & $821 = 821$ & $822 = 2 \cdot 3 \cdot 137$ \\
+$823 = 823$ & $824 = 2^3 \cdot 103$ & $825 = 3 \cdot 5^2 \cdot 11$ & $826 = 2 \cdot 7 \cdot 59$ & $827 = 827$ & $828 = 2^2 \cdot 3^2 \cdot 23$ \\
+$829 = 829$ & $830 = 2 \cdot 5 \cdot 83$ & $831 = 3 \cdot 277$ & $832 = 2^6 \cdot 13$ & $833 = 7^2 \cdot 17$ & $834 = 2 \cdot 3 \cdot 139$ \\
+$835 = 5 \cdot 167$ & $836 = 2^2 \cdot 11 \cdot 19$ & $837 = 3^3 \cdot 31$ & $838 = 2 \cdot 419$ & $839 = 839$ & $840 = 2^3 \cdot 3 \cdot 5 \cdot 7$ \\
+$841 = 29^2$ & $842 = 2 \cdot 421$ & $843 = 3 \cdot 281$ & $844 = 2^2 \cdot 211$ & $845 = 5 \cdot 13^2$ & $846 = 2 \cdot 3^2 \cdot 47$ \\
+$847 = 7 \cdot 11^2$ & $848 = 2^4 \cdot 53$ & $849 = 3 \cdot 283$ & $850 = 2 \cdot 5^2 \cdot 17$ & $851 = 23 \cdot 37$ & $852 = 2^2 \cdot 3 \cdot 71$ \\
+$853 = 853$ & $854 = 2 \cdot 7 \cdot 61$ & $855 = 3^2 \cdot 5 \cdot 19$ & $856 = 2^3 \cdot 107$ & $857 = 857$ & $858 = 2 \cdot 3 \cdot 11 \cdot 13$ \\
+$859 = 859$ & $860 = 2^2 \cdot 5 \cdot 43$ & $861 = 3 \cdot 7 \cdot 41$ & $862 = 2 \cdot 431$ & $863 = 863$ & $864 = 2^5 \cdot 3^3$ \\
+$865 = 5 \cdot 173$ & $866 = 2 \cdot 433$ & $867 = 3 \cdot 17^2$ & $868 = 2^2 \cdot 7 \cdot 31$ & $869 = 11 \cdot 79$ & $870 = 2 \cdot 3 \cdot 5 \cdot 29$ \\
+$871 = 13 \cdot 67$ & $872 = 2^3 \cdot 109$ & $873 = 3^2 \cdot 97$ & $874 = 2 \cdot 19 \cdot 23$ & $875 = 5^3 \cdot 7$ & $876 = 2^2 \cdot 3 \cdot 73$ \\
+$877 = 877$ & $878 = 2 \cdot 439$ & $879 = 3 \cdot 293$ & $880 = 2^4 \cdot 5 \cdot 11$ & $881 = 881$ & $882 = 2 \cdot 3^2 \cdot 7^2$ \\
+$883 = 883$ & $884 = 2^2 \cdot 13 \cdot 17$ & $885 = 3 \cdot 5 \cdot 59$ & $886 = 2 \cdot 443$ & $887 = 887$ & $888 = 2^3 \cdot 3 \cdot 37$ \\
+$889 = 7 \cdot 127$ & $890 = 2 \cdot 5 \cdot 89$ & $891 = 3^4 \cdot 11$ & $892 = 2^2 \cdot 223$ & $893 = 19 \cdot 47$ & $894 = 2 \cdot 3 \cdot 149$ \\
+$895 = 5 \cdot 179$ & $896 = 2^7 \cdot 7$ & $897 = 3 \cdot 13 \cdot 23$ & $898 = 2 \cdot 449$ & $899 = 29 \cdot 31$ & $900 = 2^2 \cdot 3^2 \cdot 5^2$ \\
+$901 = 17 \cdot 53$ & $902 = 2 \cdot 11 \cdot 41$ & $903 = 3 \cdot 7 \cdot 43$ & $904 = 2^3 \cdot 113$ & $905 = 5 \cdot 181$ & $906 = 2 \cdot 3 \cdot 151$ \\
+$907 = 907$ & $908 = 2^2 \cdot 227$ & $909 = 3^2 \cdot 101$ & $910 = 2 \cdot 5 \cdot 7 \cdot 13$ & $911 = 911$ & $912 = 2^4 \cdot 3 \cdot 19$ \\
+$913 = 11 \cdot 83$ & $914 = 2 \cdot 457$ & $915 = 3 \cdot 5 \cdot 61$ & $916 = 2^2 \cdot 229$ & $917 = 7 \cdot 131$ & $918 = 2 \cdot 3^3 \cdot 17$ \\
+$919 = 919$ & $920 = 2^3 \cdot 5 \cdot 23$ & $921 = 3 \cdot 307$ & $922 = 2 \cdot 461$ & $923 = 13 \cdot 71$ & $924 = 2^2 \cdot 3 \cdot 7 \cdot 11$ \\
+$925 = 5^2 \cdot 37$ & $926 = 2 \cdot 463$ & $927 = 3^2 \cdot 103$ & $928 = 2^5 \cdot 29$ & $929 = 929$ & $930 = 2 \cdot 3 \cdot 5 \cdot 31$ \\
+$931 = 7^2 \cdot 19$ & $932 = 2^2 \cdot 233$ & $933 = 3 \cdot 311$ & $934 = 2 \cdot 467$ & $935 = 5 \cdot 11 \cdot 17$ & $936 = 2^3 \cdot 3^2 \cdot 13$ \\
+$937 = 937$ & $938 = 2 \cdot 7 \cdot 67$ & $939 = 3 \cdot 313$ & $940 = 2^2 \cdot 5 \cdot 47$ & $941 = 941$ & $942 = 2 \cdot 3 \cdot 157$ \\
+$943 = 23 \cdot 41$ & $944 = 2^4 \cdot 59$ & $945 = 3^3 \cdot 5 \cdot 7$ & $946 = 2 \cdot 11 \cdot 43$ & $947 = 947$ & $948 = 2^2 \cdot 3 \cdot 79$ \\
+$949 = 13 \cdot 73$ & $950 = 2 \cdot 5^2 \cdot 19$ & $951 = 3 \cdot 317$ & $952 = 2^3 \cdot 7 \cdot 17$ & $953 = 953$ & $954 = 2 \cdot 3^2 \cdot 53$ \\
+$955 = 5 \cdot 191$ & $956 = 2^2 \cdot 239$ & $957 = 3 \cdot 11 \cdot 29$ & $958 = 2 \cdot 479$ & $959 = 7 \cdot 137$ & $960 = 2^6 \cdot 3 \cdot 5$ \\
+$961 = 31^2$ & $962 = 2 \cdot 13 \cdot 37$ & $963 = 3^2 \cdot 107$ & $964 = 2^2 \cdot 241$ & $965 = 5 \cdot 193$ & $966 = 2 \cdot 3 \cdot 7 \cdot 23$ \\
+$967 = 967$ & $968 = 2^3 \cdot 11^2$ & $969 = 3 \cdot 17 \cdot 19$ & $970 = 2 \cdot 5 \cdot 97$ & $971 = 971$ & $972 = 2^2 \cdot 3^5$ \\
+$973 = 7 \cdot 139$ & $974 = 2 \cdot 487$ & $975 = 3 \cdot 5^2 \cdot 13$ & $976 = 2^4 \cdot 61$ & $977 = 977$ & $978 = 2 \cdot 3 \cdot 163$ \\
+$979 = 11 \cdot 89$ & $980 = 2^2 \cdot 5 \cdot 7^2$ & $981 = 3^2 \cdot 109$ & $982 = 2 \cdot 491$ & $983 = 983$ & $984 = 2^3 \cdot 3 \cdot 41$ \\
+$985 = 5 \cdot 197$ & $986 = 2 \cdot 17 \cdot 29$ & $987 = 3 \cdot 7 \cdot 47$ & $988 = 2^2 \cdot 13 \cdot 19$ & $989 = 23 \cdot 43$ & $990 = 2 \cdot 3^2 \cdot 5 \cdot 11$ \\
+$991 = 991$ & $992 = 2^5 \cdot 31$ & $993 = 3 \cdot 331$ & $994 = 2 \cdot 7 \cdot 71$ & $995 = 5 \cdot 199$ & $996 = 2^2 \cdot 3 \cdot 83$ \\
+$997 = 997$ & $998 = 2 \cdot 499$ & $999 = 3^3 \cdot 37$ & $1000 = 2^3 \cdot 5^3$ & $1001 = 7 \cdot 11 \cdot 13$ & $1002 = 2 \cdot 3 \cdot 167$ \\
+$1003 = 17 \cdot 59$ & $1004 = 2^2 \cdot 251$ & $1005 = 3 \cdot 5 \cdot 67$ & $1006 = 2 \cdot 503$ & $1007 = 19 \cdot 53$ & $1008 = 2^4 \cdot 3^2 \cdot 7$ \\
+$1009 = 1009$ & $1010 = 2 \cdot 5 \cdot 101$ & $1011 = 3 \cdot 337$ & $1012 = 2^2 \cdot 11 \cdot 23$ & $1013 = 1013$ & $1014 = 2 \cdot 3 \cdot 13^2$ \\
+$1015 = 5 \cdot 7 \cdot 29$ & $1016 = 2^3 \cdot 127$ & $1017 = 3^2 \cdot 113$ & $1018 = 2 \cdot 509$ & $1019 = 1019$ & $1020 = 2^2 \cdot 3 \cdot 5 \cdot 17$ \\
+$1021 = 1021$ & $1022 = 2 \cdot 7 \cdot 73$ & $1023 = 3 \cdot 11 \cdot 31$ & $1024 = 2^10$ & $1025 = 5^2 \cdot 41$ & $1026 = 2 \cdot 3^3 \cdot 19$ \\
+$1027 = 13 \cdot 79$ & $1028 = 2^2 \cdot 257$ & $1029 = 3 \cdot 7^3$ & $1030 = 2 \cdot 5 \cdot 103$ & $1031 = 1031$ & $1032 = 2^3 \cdot 3 \cdot 43$ \\
+$1033 = 1033$ & $1034 = 2 \cdot 11 \cdot 47$ & $1035 = 3^2 \cdot 5 \cdot 23$ & $1036 = 2^2 \cdot 7 \cdot 37$ & $1037 = 17 \cdot 61$ & $1038 = 2 \cdot 3 \cdot 173$ \\
+$1039 = 1039$ & $1040 = 2^4 \cdot 5 \cdot 13$ & $1041 = 3 \cdot 347$ & $1042 = 2 \cdot 521$ & $1043 = 7 \cdot 149$ & $1044 = 2^2 \cdot 3^2 \cdot 29$ \\
+$1045 = 5 \cdot 11 \cdot 19$ & $1046 = 2 \cdot 523$ & $1047 = 3 \cdot 349$ & $1048 = 2^3 \cdot 131$ & $1049 = 1049$ & $1050 = 2 \cdot 3 \cdot 5^2 \cdot 7$ \\
+$1051 = 1051$ & $1052 = 2^2 \cdot 263$ & $1053 = 3^4 \cdot 13$ & $1054 = 2 \cdot 17 \cdot 31$ & $1055 = 5 \cdot 211$ & $1056 = 2^5 \cdot 3 \cdot 11$ \\
+$1057 = 7 \cdot 151$ & $1058 = 2 \cdot 23^2$ & $1059 = 3 \cdot 353$ & $1060 = 2^2 \cdot 5 \cdot 53$ & $1061 = 1061$ & $1062 = 2 \cdot 3^2 \cdot 59$ \\
+$1063 = 1063$ & $1064 = 2^3 \cdot 7 \cdot 19$ & $1065 = 3 \cdot 5 \cdot 71$ & $1066 = 2 \cdot 13 \cdot 41$ & $1067 = 11 \cdot 97$ & $1068 = 2^2 \cdot 3 \cdot 89$ \\
+$1069 = 1069$ & $1070 = 2 \cdot 5 \cdot 107$ & $1071 = 3^2 \cdot 7 \cdot 17$ & $1072 = 2^4 \cdot 67$ & $1073 = 29 \cdot 37$ & $1074 = 2 \cdot 3 \cdot 179$ \\
+$1075 = 5^2 \cdot 43$ & $1076 = 2^2 \cdot 269$ & $1077 = 3 \cdot 359$ & $1078 = 2 \cdot 7^2 \cdot 11$ & $1079 = 13 \cdot 83$ & $1080 = 2^3 \cdot 3^3 \cdot 5$ \\
+$1081 = 23 \cdot 47$ & $1082 = 2 \cdot 541$ & $1083 = 3 \cdot 19^2$ & $1084 = 2^2 \cdot 271$ & $1085 = 5 \cdot 7 \cdot 31$ & $1086 = 2 \cdot 3 \cdot 181$ \\
+$1087 = 1087$ & $1088 = 2^6 \cdot 17$ & $1089 = 3^2 \cdot 11^2$ & $1090 = 2 \cdot 5 \cdot 109$ & $1091 = 1091$ & $1092 = 2^2 \cdot 3 \cdot 7 \cdot 13$ \\
+$1093 = 1093$ & $1094 = 2 \cdot 547$ & $1095 = 3 \cdot 5 \cdot 73$ & $1096 = 2^3 \cdot 137$ & $1097 = 1097$ & $1098 = 2 \cdot 3^2 \cdot 61$ \\
+$1099 = 7 \cdot 157$ & $1100 = 2^2 \cdot 5^2 \cdot 11$ & $1101 = 3 \cdot 367$ & $1102 = 2 \cdot 19 \cdot 29$ & $1103 = 1103$ & $1104 = 2^4 \cdot 3 \cdot 23$ \\
+$1105 = 5 \cdot 13 \cdot 17$ & $1106 = 2 \cdot 7 \cdot 79$ & $1107 = 3^3 \cdot 41$ & $1108 = 2^2 \cdot 277$ & $1109 = 1109$ & $1110 = 2 \cdot 3 \cdot 5 \cdot 37$ \\
+$1111 = 11 \cdot 101$ & $1112 = 2^3 \cdot 139$ & $1113 = 3 \cdot 7 \cdot 53$ & $1114 = 2 \cdot 557$ & $1115 = 5 \cdot 223$ & $1116 = 2^2 \cdot 3^2 \cdot 31$ \\
+$1117 = 1117$ & $1118 = 2 \cdot 13 \cdot 43$ & $1119 = 3 \cdot 373$ & $1120 = 2^5 \cdot 5 \cdot 7$ & $1121 = 19 \cdot 59$ & $1122 = 2 \cdot 3 \cdot 11 \cdot 17$ \\
+$1123 = 1123$ & $1124 = 2^2 \cdot 281$ & $1125 = 3^2 \cdot 5^3$ & $1126 = 2 \cdot 563$ & $1127 = 7^2 \cdot 23$ & $1128 = 2^3 \cdot 3 \cdot 47$ \\
+$1129 = 1129$ & $1130 = 2 \cdot 5 \cdot 113$ & $1131 = 3 \cdot 13 \cdot 29$ & $1132 = 2^2 \cdot 283$ & $1133 = 11 \cdot 103$ & $1134 = 2 \cdot 3^4 \cdot 7$ \\
+$1135 = 5 \cdot 227$ & $1136 = 2^4 \cdot 71$ & $1137 = 3 \cdot 379$ & $1138 = 2 \cdot 569$ & $1139 = 17 \cdot 67$ & $1140 = 2^2 \cdot 3 \cdot 5 \cdot 19$ \\
+$1141 = 7 \cdot 163$ & $1142 = 2 \cdot 571$ & $1143 = 3^2 \cdot 127$ & $1144 = 2^3 \cdot 11 \cdot 13$ & $1145 = 5 \cdot 229$ & $1146 = 2 \cdot 3 \cdot 191$ \\
+$1147 = 31 \cdot 37$ & $1148 = 2^2 \cdot 7 \cdot 41$ & $1149 = 3 \cdot 383$ & $1150 = 2 \cdot 5^2 \cdot 23$ & $1151 = 1151$ & $1152 = 2^7 \cdot 3^2$ \\
+$1153 = 1153$ & $1154 = 2 \cdot 577$ & $1155 = 3 \cdot 5 \cdot 7 \cdot 11$ & $1156 = 2^2 \cdot 17^2$ & $1157 = 13 \cdot 89$ & $1158 = 2 \cdot 3 \cdot 193$ \\
+$1159 = 19 \cdot 61$ & $1160 = 2^3 \cdot 5 \cdot 29$ & $1161 = 3^3 \cdot 43$ & $1162 = 2 \cdot 7 \cdot 83$ & $1163 = 1163$ & $1164 = 2^2 \cdot 3 \cdot 97$ \\
+$1165 = 5 \cdot 233$ & $1166 = 2 \cdot 11 \cdot 53$ & $1167 = 3 \cdot 389$ & $1168 = 2^4 \cdot 73$ & $1169 = 7 \cdot 167$ & $1170 = 2 \cdot 3^2 \cdot 5 \cdot 13$ \\
+$1171 = 1171$ & $1172 = 2^2 \cdot 293$ & $1173 = 3 \cdot 17 \cdot 23$ & $1174 = 2 \cdot 587$ & $1175 = 5^2 \cdot 47$ & $1176 = 2^3 \cdot 3 \cdot 7^2$ \\
+$1177 = 11 \cdot 107$ & $1178 = 2 \cdot 19 \cdot 31$ & $1179 = 3^2 \cdot 131$ & $1180 = 2^2 \cdot 5 \cdot 59$ & $1181 = 1181$ & $1182 = 2 \cdot 3 \cdot 197$ \\
+$1183 = 7 \cdot 13^2$ & $1184 = 2^5 \cdot 37$ & $1185 = 3 \cdot 5 \cdot 79$ & $1186 = 2 \cdot 593$ & $1187 = 1187$ & $1188 = 2^2 \cdot 3^3 \cdot 11$ \\
+$1189 = 29 \cdot 41$ & $1190 = 2 \cdot 5 \cdot 7 \cdot 17$ & $1191 = 3 \cdot 397$ & $1192 = 2^3 \cdot 149$ & $1193 = 1193$ & $1194 = 2 \cdot 3 \cdot 199$ \\
+$1195 = 5 \cdot 239$ & $1196 = 2^2 \cdot 13 \cdot 23$ & $1197 = 3^2 \cdot 7 \cdot 19$ & $1198 = 2 \cdot 599$ & $1199 = 11 \cdot 109$ & $1200 = 2^4 \cdot 3 \cdot 5^2$ \\
+$1201 = 1201$ & $1202 = 2 \cdot 601$ & $1203 = 3 \cdot 401$ & $1204 = 2^2 \cdot 7 \cdot 43$ & $1205 = 5 \cdot 241$ & $1206 = 2 \cdot 3^2 \cdot 67$ \\
+$1207 = 17 \cdot 71$ & $1208 = 2^3 \cdot 151$ & $1209 = 3 \cdot 13 \cdot 31$ & $1210 = 2 \cdot 5 \cdot 11^2$ & $1211 = 7 \cdot 173$ & $1212 = 2^2 \cdot 3 \cdot 101$ \\
+$1213 = 1213$ & $1214 = 2 \cdot 607$ & $1215 = 3^5 \cdot 5$ & $1216 = 2^6 \cdot 19$ & $1217 = 1217$ & $1218 = 2 \cdot 3 \cdot 7 \cdot 29$ \\
+$1219 = 23 \cdot 53$ & $1220 = 2^2 \cdot 5 \cdot 61$ & $1221 = 3 \cdot 11 \cdot 37$ & $1222 = 2 \cdot 13 \cdot 47$ & $1223 = 1223$ & $1224 = 2^3 \cdot 3^2 \cdot 17$ \\
+$1225 = 5^2 \cdot 7^2$ & $1226 = 2 \cdot 613$ & $1227 = 3 \cdot 409$ & $1228 = 2^2 \cdot 307$ & $1229 = 1229$ & $1230 = 2 \cdot 3 \cdot 5 \cdot 41$ \\
+$1231 = 1231$ & $1232 = 2^4 \cdot 7 \cdot 11$ & $1233 = 3^2 \cdot 137$ & $1234 = 2 \cdot 617$ & $1235 = 5 \cdot 13 \cdot 19$ & $1236 = 2^2 \cdot 3 \cdot 103$ \\
+$1237 = 1237$ & $1238 = 2 \cdot 619$ & $1239 = 3 \cdot 7 \cdot 59$ & $1240 = 2^3 \cdot 5 \cdot 31$ & $1241 = 17 \cdot 73$ & $1242 = 2 \cdot 3^3 \cdot 23$ \\
+$1243 = 11 \cdot 113$ & $1244 = 2^2 \cdot 311$ & $1245 = 3 \cdot 5 \cdot 83$ & $1246 = 2 \cdot 7 \cdot 89$ & $1247 = 29 \cdot 43$ & $1248 = 2^5 \cdot 3 \cdot 13$ \\
+$1249 = 1249$ & $1250 = 2 \cdot 5^4$ & $1251 = 3^2 \cdot 139$ & $1252 = 2^2 \cdot 313$ & $1253 = 7 \cdot 179$ & $1254 = 2 \cdot 3 \cdot 11 \cdot 19$ \\
+$1255 = 5 \cdot 251$ & $1256 = 2^3 \cdot 157$ & $1257 = 3 \cdot 419$ & $1258 = 2 \cdot 17 \cdot 37$ & $1259 = 1259$ & $1260 = 2^2 \cdot 3^2 \cdot 5 \cdot 7$ \\
+$1261 = 13 \cdot 97$ & $1262 = 2 \cdot 631$ & $1263 = 3 \cdot 421$ & $1264 = 2^4 \cdot 79$ & $1265 = 5 \cdot 11 \cdot 23$ & $1266 = 2 \cdot 3 \cdot 211$ \\
+$1267 = 7 \cdot 181$ & $1268 = 2^2 \cdot 317$ & $1269 = 3^3 \cdot 47$ & $1270 = 2 \cdot 5 \cdot 127$ & $1271 = 31 \cdot 41$ & $1272 = 2^3 \cdot 3 \cdot 53$ \\
+$1273 = 19 \cdot 67$ & $1274 = 2 \cdot 7^2 \cdot 13$ & $1275 = 3 \cdot 5^2 \cdot 17$ & $1276 = 2^2 \cdot 11 \cdot 29$ & $1277 = 1277$ & $1278 = 2 \cdot 3^2 \cdot 71$ \\
+$1279 = 1279$ & $1280 = 2^8 \cdot 5$ & $1281 = 3 \cdot 7 \cdot 61$ & $1282 = 2 \cdot 641$ & $1283 = 1283$ & $1284 = 2^2 \cdot 3 \cdot 107$ \\
+$1285 = 5 \cdot 257$ & $1286 = 2 \cdot 643$ & $1287 = 3^2 \cdot 11 \cdot 13$ & $1288 = 2^3 \cdot 7 \cdot 23$ & $1289 = 1289$ & $1290 = 2 \cdot 3 \cdot 5 \cdot 43$ \\
+$1291 = 1291$ & $1292 = 2^2 \cdot 17 \cdot 19$ & $1293 = 3 \cdot 431$ & $1294 = 2 \cdot 647$ & $1295 = 5 \cdot 7 \cdot 37$ & $1296 = 2^4 \cdot 3^4$ \\
+$1297 = 1297$ & $1298 = 2 \cdot 11 \cdot 59$ & $1299 = 3 \cdot 433$ & $1300 = 2^2 \cdot 5^2 \cdot 13$ & $1301 = 1301$ & $1302 = 2 \cdot 3 \cdot 7 \cdot 31$ \\
+$1303 = 1303$ & $1304 = 2^3 \cdot 163$ & $1305 = 3^2 \cdot 5 \cdot 29$ & $1306 = 2 \cdot 653$ & $1307 = 1307$ & $1308 = 2^2 \cdot 3 \cdot 109$ \\
+$1309 = 7 \cdot 11 \cdot 17$ & $1310 = 2 \cdot 5 \cdot 131$ & $1311 = 3 \cdot 19 \cdot 23$ & $1312 = 2^5 \cdot 41$ & $1313 = 13 \cdot 101$ & $1314 = 2 \cdot 3^2 \cdot 73$ \\
+\end{longtable}
+
+\subsection{Таблица простых чисел}
+
+Таблица простых чисел от 2-10314
+
+\begin{longtable}{lllll lllll lll}
+2 &3 &5 &7 &11 &13 &17 &19 &23 &29 &31 &37 &41 \\
+43 &47 &53 &59 &61 &67 &71 &73 &79 &83 &89 &97 &101 \\
+103 &107 &109 &113 &127 &131 &137 &139 &149 &151 &157 &163 &167 \\
+173 &179 &181 &191 &193 &197 &199 &211 &223 &227 &229 &233 &239 \\
+241 &251 &257 &263 &269 &271 &277 &281 &283 &293 &307 &311 &313 \\
+317 &331 &337 &347 &349 &353 &359 &367 &373 &379 &383 &389 &397 \\
+401 &409 &419 &421 &431 &433 &439 &443 &449 &457 &461 &463 &467 \\
+479 &487 &491 &499 &503 &509 &521 &523 &541 &547 &557 &563 &569 \\
+571 &577 &587 &593 &599 &601 &607 &613 &617 &619 &631 &641 &643 \\
+647 &653 &659 &661 &673 &677 &683 &691 &701 &709 &719 &727 &733 \\
+739 &743 &751 &757 &761 &769 &773 &787 &797 &809 &811 &821 &823 \\
+827 &829 &839 &853 &857 &859 &863 &877 &881 &883 &887 &907 &911 \\
+919 &929 &937 &941 &947 &953 &967 &971 &977 &983 &991 &997 &1009 \\
+1013 &1019 &1021 &1031 &1033 &1039 &1049 &1051 &1061 &1063 &1069 &1087 &1091 \\
+1093 &1097 &1103 &1109 &1117 &1123 &1129 &1151 &1153 &1163 &1171 &1181 &1187 \\
+1193 &1201 &1213 &1217 &1223 &1229 &1231 &1237 &1249 &1259 &1277 &1279 &1283 \\
+1289 &1291 &1297 &1301 &1303 &1307 &1319 &1321 &1327 &1361 &1367 &1373 &1381 \\
+1399 &1409 &1423 &1427 &1429 &1433 &1439 &1447 &1451 &1453 &1459 &1471 &1481 \\
+1483 &1487 &1489 &1493 &1499 &1511 &1523 &1531 &1543 &1549 &1553 &1559 &1567 \\
+1571 &1579 &1583 &1597 &1601 &1607 &1609 &1613 &1619 &1621 &1627 &1637 &1657 \\
+1663 &1667 &1669 &1693 &1697 &1699 &1709 &1721 &1723 &1733 &1741 &1747 &1753 \\
+1759 &1777 &1783 &1787 &1789 &1801 &1811 &1823 &1831 &1847 &1861 &1867 &1871 \\
+1873 &1877 &1879 &1889 &1901 &1907 &1913 &1931 &1933 &1949 &1951 &1973 &1979 \\
+1987 &1993 &1997 &1999 &2003 &2011 &2017 &2027 &2029 &2039 &2053 &2063 &2069 \\
+2081 &2083 &2087 &2089 &2099 &2111 &2113 &2129 &2131 &2137 &2141 &2143 &2153 \\
+2161 &2179 &2203 &2207 &2213 &2221 &2237 &2239 &2243 &2251 &2267 &2269 &2273 \\
+2281 &2287 &2293 &2297 &2309 &2311 &2333 &2339 &2341 &2347 &2351 &2357 &2371 \\
+2377 &2381 &2383 &2389 &2393 &2399 &2411 &2417 &2423 &2437 &2441 &2447 &2459 \\
+2467 &2473 &2477 &2503 &2521 &2531 &2539 &2543 &2549 &2551 &2557 &2579 &2591 \\
+2593 &2609 &2617 &2621 &2633 &2647 &2657 &2659 &2663 &2671 &2677 &2683 &2687 \\
+2689 &2693 &2699 &2707 &2711 &2713 &2719 &2729 &2731 &2741 &2749 &2753 &2767 \\
+2777 &2789 &2791 &2797 &2801 &2803 &2819 &2833 &2837 &2843 &2851 &2857 &2861 \\
+2879 &2887 &2897 &2903 &2909 &2917 &2927 &2939 &2953 &2957 &2963 &2969 &2971 \\
+2999 &3001 &3011 &3019 &3023 &3037 &3041 &3049 &3061 &3067 &3079 &3083 &3089 \\
+3109 &3119 &3121 &3137 &3163 &3167 &3169 &3181 &3187 &3191 &3203 &3209 &3217 \\
+3221 &3229 &3251 &3253 &3257 &3259 &3271 &3299 &3301 &3307 &3313 &3319 &3323 \\
+3329 &3331 &3343 &3347 &3359 &3361 &3371 &3373 &3389 &3391 &3407 &3413 &3433 \\
+3449 &3457 &3461 &3463 &3467 &3469 &3491 &3499 &3511 &3517 &3527 &3529 &3533 \\
+3539 &3541 &3547 &3557 &3559 &3571 &3581 &3583 &3593 &3607 &3613 &3617 &3623 \\
+3631 &3637 &3643 &3659 &3671 &3673 &3677 &3691 &3697 &3701 &3709 &3719 &3727 \\
+3733 &3739 &3761 &3767 &3769 &3779 &3793 &3797 &3803 &3821 &3823 &3833 &3847 \\
+3851 &3853 &3863 &3877 &3881 &3889 &3907 &3911 &3917 &3919 &3923 &3929 &3931 \\
+3943 &3947 &3967 &3989 &4001 &4003 &4007 &4013 &4019 &4021 &4027 &4049 &4051 \\
+4057 &4073 &4079 &4091 &4093 &4099 &4111 &4127 &4129 &4133 &4139 &4153 &4157 \\
+4159 &4177 &4201 &4211 &4217 &4219 &4229 &4231 &4241 &4243 &4253 &4259 &4261 \\
+4271 &4273 &4283 &4289 &4297 &4327 &4337 &4339 &4349 &4357 &4363 &4373 &4391 \\
+4397 &4409 &4421 &4423 &4441 &4447 &4451 &4457 &4463 &4481 &4483 &4493 &4507 \\
+4513 &4517 &4519 &4523 &4547 &4549 &4561 &4567 &4583 &4591 &4597 &4603 &4621 \\
+4637 &4639 &4643 &4649 &4651 &4657 &4663 &4673 &4679 &4691 &4703 &4721 &4723 \\
+4729 &4733 &4751 &4759 &4783 &4787 &4789 &4793 &4799 &4801 &4813 &4817 &4831 \\
+4861 &4871 &4877 &4889 &4903 &4909 &4919 &4931 &4933 &4937 &4943 &4951 &4957 \\
+4967 &4969 &4973 &4987 &4993 &4999 &5003 &5009 &5011 &5021 &5023 &5039 &5051 \\
+5059 &5077 &5081 &5087 &5099 &5101 &5107 &5113 &5119 &5147 &5153 &5167 &5171 \\
+5179 &5189 &5197 &5209 &5227 &5231 &5233 &5237 &5261 &5273 &5279 &5281 &5297 \\
+5303 &5309 &5323 &5333 &5347 &5351 &5381 &5387 &5393 &5399 &5407 &5413 &5417 \\
+5419 &5431 &5437 &5441 &5443 &5449 &5471 &5477 &5479 &5483 &5501 &5503 &5507 \\
+5519 &5521 &5527 &5531 &5557 &5563 &5569 &5573 &5581 &5591 &5623 &5639 &5641 \\
+5647 &5651 &5653 &5657 &5659 &5669 &5683 &5689 &5693 &5701 &5711 &5717 &5737 \\
+5741 &5743 &5749 &5779 &5783 &5791 &5801 &5807 &5813 &5821 &5827 &5839 &5843 \\
+5849 &5851 &5857 &5861 &5867 &5869 &5879 &5881 &5897 &5903 &5923 &5927 &5939 \\
+5953 &5981 &5987 &6007 &6011 &6029 &6037 &6043 &6047 &6053 &6067 &6073 &6079 \\
+6089 &6091 &6101 &6113 &6121 &6131 &6133 &6143 &6151 &6163 &6173 &6197 &6199 \\
+6203 &6211 &6217 &6221 &6229 &6247 &6257 &6263 &6269 &6271 &6277 &6287 &6299 \\
+6301 &6311 &6317 &6323 &6329 &6337 &6343 &6353 &6359 &6361 &6367 &6373 &6379 \\
+6389 &6397 &6421 &6427 &6449 &6451 &6469 &6473 &6481 &6491 &6521 &6529 &6547 \\
+6551 &6553 &6563 &6569 &6571 &6577 &6581 &6599 &6607 &6619 &6637 &6653 &6659 \\
+6661 &6673 &6679 &6689 &6691 &6701 &6703 &6709 &6719 &6733 &6737 &6761 &6763 \\
+6779 &6781 &6791 &6793 &6803 &6823 &6827 &6829 &6833 &6841 &6857 &6863 &6869 \\
+6871 &6883 &6899 &6907 &6911 &6917 &6947 &6949 &6959 &6961 &6967 &6971 &6977 \\
+6983 &6991 &6997 &7001 &7013 &7019 &7027 &7039 &7043 &7057 &7069 &7079 &7103 \\
+7109 &7121 &7127 &7129 &7151 &7159 &7177 &7187 &7193 &7207 &7211 &7213 &7219 \\
+7229 &7237 &7243 &7247 &7253 &7283 &7297 &7307 &7309 &7321 &7331 &7333 &7349 \\
+7351 &7369 &7393 &7411 &7417 &7433 &7451 &7457 &7459 &7477 &7481 &7487 &7489 \\
+7499 &7507 &7517 &7523 &7529 &7537 &7541 &7547 &7549 &7559 &7561 &7573 &7577 \\
+7583 &7589 &7591 &7603 &7607 &7621 &7639 &7643 &7649 &7669 &7673 &7681 &7687 \\
+7691 &7699 &7703 &7717 &7723 &7727 &7741 &7753 &7757 &7759 &7789 &7793 &7817 \\
+7823 &7829 &7841 &7853 &7867 &7873 &7877 &7879 &7883 &7901 &7907 &7919 &7927 \\
+7933 &7937 &7949 &7951 &7963 &7993 &8009 &8011 &8017 &8039 &8053 &8059 &8069 \\
+8081 &8087 &8089 &8093 &8101 &8111 &8117 &8123 &8147 &8161 &8167 &8171 &8179 \\
+8191 &8209 &8219 &8221 &8231 &8233 &8237 &8243 &8263 &8269 &8273 &8287 &8291 \\
+8293 &8297 &8311 &8317 &8329 &8353 &8363 &8369 &8377 &8387 &8389 &8419 &8423 \\
+8429 &8431 &8443 &8447 &8461 &8467 &8501 &8513 &8521 &8527 &8537 &8539 &8543 \\
+8563 &8573 &8581 &8597 &8599 &8609 &8623 &8627 &8629 &8641 &8647 &8663 &8669 \\
+8677 &8681 &8689 &8693 &8699 &8707 &8713 &8719 &8731 &8737 &8741 &8747 &8753 \\
+8761 &8779 &8783 &8803 &8807 &8819 &8821 &8831 &8837 &8839 &8849 &8861 &8863 \\
+8867 &8887 &8893 &8923 &8929 &8933 &8941 &8951 &8963 &8969 &8971 &8999 &9001 \\
+9007 &9011 &9013 &9029 &9041 &9043 &9049 &9059 &9067 &9091 &9103 &9109 &9127 \\
+9133 &9137 &9151 &9157 &9161 &9173 &9181 &9187 &9199 &9203 &9209 &9221 &9227 \\
+9239 &9241 &9257 &9277 &9281 &9283 &9293 &9311 &9319 &9323 &9337 &9341 &9343 \\
+9349 &9371 &9377 &9391 &9397 &9403 &9413 &9419 &9421 &9431 &9433 &9437 &9439 \\
+9461 &9463 &9467 &9473 &9479 &9491 &9497 &9511 &9521 &9533 &9539 &9547 &9551 \\
+9587 &9601 &9613 &9619 &9623 &9629 &9631 &9643 &9649 &9661 &9677 &9679 &9689 \\
+9697 &9719 &9721 &9733 &9739 &9743 &9749 &9767 &9769 &9781 &9787 &9791 &9803 \\
+9811 &9817 &9829 &9833 &9839 &9851 &9857 &9859 &9871 &9883 &9887 &9901 &9907 \\
+9923 &9929 &9931 &9941 &9949 &9967 &9973 &10007 &10009 &10037 &10039 &10061 &10067 \\
+10069 &10079 &10091 &10093 &10099 &10103 &10111 &10133 &10139 &10141 &10151 &10159 &10163 \\
+10169 &10177 &10181 &10193 &10211 &10223 &10243 &10247 &10253 &10259 &10267 &10271 &10273 \\
+10289 &10301 &10303 &10313 &
+
+
+\end{longtable}
+
+\normalsize
+
+\subsection{Число pi}
+
+\begin{tabular}{l}
+PI=3.\\
+1415926535897932384626433832795028841971693993751058209749445923078164062862\\
+0899862803482534211706798214808651328230664709384460955058223172535940812848\\
+1117450284102701938521105559644622948954930381964428810975665933446128475648\\
+2337867831652712019091456485669234603486104543266482133936072602491412737245\\
+8700660631558817488152092096282925409171536436789259036001133053054882046652\\
+1384146951941511609433057270365759591953092186117381932611793105118548074462\\
+3799627495673518857527248912279381830119491298336733624406566430860213949463\\
+9522473719070217986094370277053921717629317675238467481846766940513200056812\\
+7145263560827785771342757789609173637178721468440901224953430146549585371050\\
+7922796892589235420199561121290219608640344181598136297747713099605187072113\\
+4999999837297804995105973173281609631859502445945534690830264252230825334468\\
+5035261931188171010003137838752886587533208381420617177669147303598253490428\\
+7554687311595628638823537875937519577818577805321712268066130019278766111959\\
+0921642019893809525720106548586327886593615338182796823030195203530185296899\\
+5773622599413891249721775283479131515574857242454150695950829533116861727855\\
+8890750983817546374649393192550604009277016711390098488240128583616035637076\\
+6010471018194295559619894676783744944825537977472684710404753464620804668425\\
+9069491293313677028989152104752162056966024058038150193511253382430035587640\\
+2474964732639141992726042699227967823547816360093417216412199245863150302861\\
+8297455570674983850549458858692699569092721079750930295532116534498720275596\\
+0236480665499119881834797753566369807426542527862551818417574672890977772793\\
+8000816470600161452491921732172147723501414419735685481613611573525521334757\\
+4184946843852332390739414333454776241686251898356948556209921922218427255025\\
+4256887671790494601653466804988627232791786085784383827967976681454100953883\\
+7863609506800642251252051173929848960841284886269456042419652850222106611863\\
+0674427862203919494504712371378696095636437191728746776465757396241389086583\\
+264599581339047802759009\\
+\end{tabular}
+
+\subsection{Число e}
+\begin{tabular}{l}
+PI=2.\\
+718281828459045235360287471352662497757247093699959574966967627724076630353\\
+547594571382178525166427427466391932003059921817413596629043572900334295260\\
+595630738132328627943490763233829880753195251019011573834187930702154089149\\
+934884167509244761460668082264800168477411853742345442437107539077744992069\\
+551702761838606261331384583000752044933826560297606737113200709328709127443\\
+747047230696977209310141692836819025515108657463772111252389784425056953696\\
+770785449969967946864454905987931636889230098793127736178215424999229576351\\
+482208269895193668033182528869398496465105820939239829488793320362509443117\\
+301238197068416140397019837679320683282376464804295311802328782509819455815\\
+301756717361332069811250996181881593041690351598888519345807273866738589422\\
+879228499892086805825749279610484198444363463244968487560233624827041978623\\
+209002160990235304369941849146314093431738143640546253152096183690888707016\\
+768396424378140592714563549061303107208510383750510115747704171898610687396\\
+9655212671546889570350354021234078498193343210681701210056278802351920
+\end{tabular}
+
+\newpage
+\section{Преобразования}
+\subsection{Преобразования Фурье}
+Прямое преобразование Фурье:
+$$ \hat f(x) = \cfrac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^{\infty}{ f(x) e^{-ix\omega} dx} $$
+
+Обратное преобразование Фурье:
+$$ f(x) = \cfrac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^{\infty}{ \hat f(x) e^{ix\omega} d\omega} $$
+
+Теорема о свертке:
+$$ (f * g)(t) = \int\limits_{-\infty}^{\infty}{ f(t-s)g(s) ds} $$
+
+\subsubsection{Некоторые преобразования Фурье}
+\begin{tabular}[c]{|p{0.3cm}|p{2.8cm}|p{4.5cm}|p{8cm}|}
+\hline
+ &Функция & Образ & Примечание \\ \hline
+1 & $ a f(t) + b g(t)$ & $aF(\omega)+bG(\omega)$ & Линейность \\ \hline
+2 & $ f(t-a)$ & $e^{i\omega a}F(\omega)$ & Запаздывание \\ \hline
+3 & $ e^{iat}f(t)$ & $F(\omega-a)$ & Частотный сдвиг \\ \hline
+4 & $ f(at)$ & $ |a|^{-1}F\left( \cfrac{\omega}{a} \right) $ & Если a большое, то $f(at)$ сосредоточена около 0 \\ \hline
+5 & $ \cfrac{d^nf(t)}{dt^n} $ & $ (i\omega)^nF(\omega) $ & Св-ва преобразования Фурье n-й производной \\ \hline
+6 & $ t^n f(t) $ & $ i^n \cfrac{d^nF(\omega)}{d\omega^n} $ & Это обращение правила 5 \\ \hline
+7 & $ (f * g)(t)$ & $ F(\omega)G(\omega) $ & Запись $f*g$ обозначает свертку функций f и g \\ \hline
+8 & $ f(t)g(t)$ & $ \cfrac{(F * G)(\omega)}{\sqrt{2\pi}} $ & Это оборащение правила 7 \\ \hline
+9 & $ \delta(t) $ & $ \cfrac{1}{\sqrt{2\pi}} $ & $ \delta(t) $ - функция Дирака \\ \hline
+10 & $ 1 $ & $ \sqrt{2\pi}\delta(\omega) $ & Обращение 9 \\ \hline
+11 & $ t^n $ & $ i^n \sqrt{2\pi} \delta^{(n)}(\omega) $ & $n$-натуральное число. Следствие 6 и 10. \\ \hline
+12 & $ e^{iat} $ & $ \sqrt{2\pi}\delta(\omega-a) $  & Следствие 3 и 10.\\ \hline
+13 & $ \cos(at) $ & $ \sqrt{2\pi} \cfrac{\delta(\omega-a)+\delta(\omega+a)}{2} $ & Следствие 1 и 12.\\ \hline
+14 & $ \sin(at) $ & $ \sqrt{2\pi} \cfrac{\delta(\omega-a)-\delta(\omega+a)}{2i} $ & Так же из 1 и 12\\ \hline
+15 & $ e^{-at^2} $ & $ \cfrac{1}{2a} e^{\frac{-\omega^2}{4a}} $ & Функция Гаусса совпадает со  изображением.\\ \hline
+16 & $ W\sqrt{\cfrac{2}{\pi}}sinc(Wt) $ & $ rect\left( \cfrac{\omega}{2W} \right) $ & $ sinc(x) = \cfrac{\sin(\pi x)}{\pi x} = \prod\limits^{\infty}_{n=1}{ \left( 1 - \cfrac{x^2}{n^2} \right) }$\\ \hline
+17 & $ \cfrac{1}{t} $ & $ -i \sqrt{\cfrac{2}{\pi}} sgn(\omega) $ & Из 6 и 10.\\ \hline
+18 & $ \cfrac{1}{t^n} $ & $ -i\sqrt{\cfrac{2}{\pi}} \cfrac{(i\omega)^{n-1}}{(n-1)!} sgn(\omega) $ &  Из 17.\\ \hline
+19 & $ sgn(t) $ & $ \sqrt{\cfrac{2}{\pi}}(i\omega)^{-1} $ & Из 17.\\ \hline
+20 & $ \sqrt{2\pi}H(t) $ & $ \cfrac{1}{i\omega}+\pi \delta(\omega) $ & Из 1 и 19.\\ 
+\hline
+\end{tabular}
+
+
+\subsection{Преобразования Лапласа}
+Преобразованием Лапласа функции действительной переменной $f(x)$, называется функция $F(s)$ комплексной переменной $s =\sigma + i \omega $ , такая что:
+$$ F(x) = \int\limits^\infty_0{e^{-ex}f(x)dt} $$
+
+Обратным преобразованием Лапласа функции комплексного переменного $F(s)$, называется функция $f(x)$ действительного переменного, такая что:
+$$ f(x) = \frac{1}{2\pi i}\int\limits^{\sigma_1+i\infty}_{\sigma_1-i\infty}{e^{sx}F(s)ds} $$
+где $\sigma_1$ - некоторое вещественное число.	
+\subsubsection{Абсолютная сходимость}
+Если интеграл Лапласа абсолютно сходится при $\sigma=\sigma_0$, то есть существует предел
+$$ \lim_{b\to\infty}{\int\limits^b_0{|f(x)|e^{-\sigma_0x}dx}} = \int\limits_0^{\infty}{|f(x)|e^{-\sigma_0x}dx} $$
+то он сходится абсолютно и равномерно для $\sigma \geq \sigma_0$ и $F(s)$ — аналитичная функция при $\sigma \geq \sigma_0$ ($\sigma = Re(s) $ — действительная часть комплексной переменной $s$). Точная нижняя грань $\sigma_a$ множества чисел $\sigma$, при которых это условие выполняется, называется абсциссой абсолютной сходимости преобразования Лапласа для функции $f(x)$.
+
+\subsubsection{Условия существования преобразования Лапласа}
+Преобразование Лапласа существует в смысле абсолютной сходимости в следующих случаях:
+1. Случай $\sigma \geq 0 $ : преобразование Лапласа существует, если существует интеграл
+$\int\limits^\infty_0{|f(x)|dx}$
+2. Случай $\sigma>\sigma_a$: преобразование Лапласа существует, если интеграл $\int\limits^{x_1}_0{|f(x)|dx}$ существует для каждого конечного $x_1>0$ и $|f(x)|\leq Ke^{\sigma_ax}$ для $x>x_1\geq0$ \\
+3. Случай $\sigma>0$ или $\sigma\geq\sigma_a$ (какая из границ больше): преобразование Лапласа существует, если существует преобразование Лапласа для функции $f'(x)$ (производная к $f(x)$ ) для $\sigma~\geq~\sigma_a$. \\
+Примечание: это достаточные условия существования.
+\subsubsection{Теорема о свертке}
+   
+
+\subsubsection{Умножение изображений}
+
+
+\subsubsection{Дифференцирование и интегрирование оригинала}
+
+
+\subsubsection{Дифференцирование и интегрирование изображения}
+
+
+\subsubsection{Запаздывание оригиналов и изображений. Предельные теоремы}
+
+
+\subsubsection{Другие свойства}
+
+\newpage
+\subsubsection{Прямое и обратное преобразование Лапласа некоторых функций}
+\begin{tabular}[c]{|p{0.3cm}|p{4.5cm}|p{4.5cm}|p{6cm}|}
+\hline
+ & $x(t)$ & $X(j\omega)$ & Примечание (область сходимости) \\ \hline
+1 & $ \delta(t-\tau) $ & $ e^{-\tau s} $ & \\ \hline
+2 & $ \delta(t) $ & $ 1 $ & $\forall s$ \\ \hline
+3 & $ \cfrac{(t-\tau)^n}{n!}\ e^{-\alpha(t\tau)}u(t\tau) $ & $ \cfrac{e^{-\tau s}}{(s+\alpha)^{n+1}} $ & $ s>0$ \\ \hline
+4 & $ \cfrac{t^n}{n!} u(t) $ & $ \cfrac{1}{s^{n+1}} $ & $s>0$ \\ \hline
+5 & $ \cfrac{t^q}{\Gamma(q+1)} u(t) $ & $ \cfrac{1}{s^{n+1}} $ & $s>0$ \\ \hline
+6 & $ u(t) $ & $ \cfrac{1}{s} $ &  $s>0$ \\ \hline
+7 & $ u(t-\tau) $ & $ \cfrac{e^{-\tau s}}{s} $ & $s>0$ \\ \hline
+8 & $ t u(t) $ & $ \cfrac{1}{s^2} $ &  $s>0$ \\ \hline
+9 & $ \cfrac{t^n}{n!}\ e^{-\alpha t} u(t) $ & $ \cfrac{1}{(s+\alpha)^{n+1}} $ &  $s>-\alpha$  \\ \hline
+10 & $ e^{-\alpha t} u(t) $ & $ \cfrac{1}{s+\alpha} $ &  $s>-\alpha$ \\ \hline
+11 & $ (1-e^{-\alpha t}) u(t) $ & $ \cfrac{\alpha}{s(s+\alpha)} $ & $s>0$  \\ \hline
+12 & $ \sin(\omega t) u(t) $ & $ \cfrac{\omega}{s^2+\omega^2} $ &  $s>0$ \\ \hline
+13 & $ \cos(\omega t) u(t) $ & $ \cfrac{s}{s^2+\omega^2} $ &  $s>0$ \\ \hline
+14 & $ \sinh(\alpha t) u(t) $ & $ \cfrac{\alpha}{s^2 - \alpha^2} $ & $s>|\alpha|$  \\ \hline
+15 & $ \cosh(\alpha t) u(t) $ & $ \cfrac{s}{s^2 - \alpha^2}$ &  $s>|\alpha|$ \\ \hline
+16 & $ e^{-\alpha t} \sin(\omega t) u(t) $ & $ \cfrac{\omega}{(s+\alpha)^2+\omega^2} $ & $s>-\alpha$ \\ \hline
+17 & $ e^{-\alpha t} \cos(\omega t) u(t) $ & $ \cfrac{s+\alpha}{(s+\alpha)^2+\omega^2} $ & $s>-\alpha$ \\ \hline
+18 & $ \sqrt[n]{t}\ u(t) $ & $ s^{-\frac{n+1}{n}}\Gamma \left( 1+\cfrac{1}{n} \right) $ &  $s>0$  \\ \hline
+19 & $ ln(\frac{t}{t_0})\ u(t) $ & $ -\frac{t_0}{s} \left[ ln(t_0 s) + \gamma \right] $ &  $s>0; n>-1$; Постоянная Эйлера - Маскерони $\gamma = \lim\limits_{n \to \infty}{\left( \sum\limits_{k=1}^{n}{ \cfrac{1}{k} - \ln n }\right)} \approx 0,57721 56649 01532 86060 65120$ \\ \hline
+20 & $ J_n(\omega t)\ u(t) $ & $ \cfrac{\omega
+^n(s+\sqrt{s^2+\omega^2})^{-n}}{\sqrt{s^2+\omega^2}}  $ & функция Бесселя первого рода порядка n \\ \hline
+\end{tabular}
+
+\newpage
+\subsection{Z-Преобразование}
+Z-преобразованием называют свертывание исходного сигнала, заданного последовательностью вещественных чисел во временной области, в аналитическую функцию комплексной частоты. Если сигнал представляет импульсную характеристику линейной системы, то коэффициенты Z-преобразования показывают отклик системы на комплексные экспоненты $E(n) = z^{-n} = r^{-n}\ e^{-i \omega n}$, то есть на гармонические осцилляциии с различными частотами и скоростями нарастания/затухания.
+\newline\newline
+\textbf{Двустороннее Z-преобразование} \newline
+$$ x(z) = Z\{x[n]\} = \sum\limits_{n=-\infty}^{\infty}{x[n]\ z^{-n}}$$
+где $n$ - целое, $z = Ae^{j\varphi}$ - комплексное число.
+\newline\newline
+\textbf{Одностороннее Z-преобразование} \newline
+В случае когда $x[n]$ определена для $n \ge 0$:
+$$ x(z) = Z\{x[n]\} = \sum\limits_{n=0}^{\infty}{x[n]\ z^{-n}}$$
+
+\subsubsection{Обратное Z-преобразование}
+
+$$ x[n] = Z^{-1}\{X(z)\} = \cfrac{1}{2\pi j} \oint\limits_C{X(z)z^{n-1}dz} $$
+
+
+\subsubsection{Область сходимости}
+Область сходимости представляет из себя некоторое множество точек на комплексной плоскости, в которых выполнено условие:
+
+$$ OC = \left\{ z : \sum\limits_{n=-\infty}^{\infty}{x[n]\ z^{-n}} < \infty  \right\} $$
+
+\newpage
+\subsubsection{Таблица некоторых Z-преобразований}
+\begin{tabular}[c]{|p{0.3cm}|p{4.5cm}|p{4.5cm}|p{6cm}|}\hline
+ & $x[n]$ & $X(z)$ & Область сходимости \\ \hline
+1 & $ \delta[n] $ & $1$ & $ \forall z $ \\ \hline
+2 & $ \delta[n-n_0]$ & $ \cfrac{1}{z^{n_0}} $ & $ \forall z $ \\ \hline
+3 & $ u[n]$ & $\cfrac{z}{z-1} $ & $ |z|>1 $ \\ \hline
+4 & $ a^n u[n]$ & $ \cfrac{1}{1-az^{-1}} $ & $ |z|>|a| $ \\ \hline
+5 & $ n a^n u[n]$ & $ \cfrac{az^{-1}}{(1-az^{-1})^2} $ & $ |z|>|a| $ \\ \hline
+6 & $ -a^n u[-n-1]$ & $ \cfrac{1}{1-az^{-1}} $ & $ |z|<|a| $ \\ \hline
+7 & $ -n a^n u[-n-1]$ & $ \cfrac{az^{-1}}{(1-az^{-1})^2} $ & $ |z|<|a| $ \\ \hline
+8 & $ \cos(\omega_0 n) u[n]$ & $ \cfrac{1-z^{-1}\cos(\omega_0)}{1-2z^{-1}\cos(\omega_0)+z^{-2}} $ & $ |z|>1 $ \\ \hline
+9 & $ \sin(\omega_0 n) u[n]$ & $ \cfrac{1-z^{-1}\sin(\omega_0)}{1-2z^{-1}\cos(\omega_0)+z^{-2}}$ & $ |z|>1 $ \\ \hline
+10 & $ a^n \cos(\omega_0 n) u[n]$ & $ \cfrac{1-az^{-1}\cos(\omega_0)}{1-2z^{-1}\cos(\omega_0)+a^2z^{-2}}$ & $ |z|>|a| $ \\ \hline
+11 & $ a^n \sin(\omega_0 n) u[n]$ & $ \cfrac{1-az^{-1}\sin(\omega_0)}{1-2z^{-1}\cos(\omega_0)+a^2z^{-2}}$ & $ |z|>|a| $ \\ \hline
+\end{tabular}
+
+
+\end{document}
+
+
